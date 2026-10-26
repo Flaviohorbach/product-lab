@@ -1,0 +1,24 @@
+{
+  "name": "product-copy-lab",
+  "version": "0.1.0",
+  "description": "Generates e-commerce product copy (pt-BR) from a spec sheet and a photo with Gemini, and benchmarks prompts and models on quality, cost and latency.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Flávio Horbach",
+  "scripts": {
+    "generate": "tsx src/cli/generate.ts",
+    "bench": "tsx src/cli/bench.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.31.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

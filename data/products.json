@@ -1,0 +1,172 @@
+[
+  {
+    "id": "espatula-bambu",
+    "name": "Espátula de Bambu",
+    "category": "Cozinha > Utensílios",
+    "brand": null,
+    "priceBRL": 29.9,
+    "attributes": {
+      "Material": "Bambu",
+      "Comprimento": "30 cm",
+      "Garantia": "1 mês"
+    },
+    "notes": "Pode ser usada em panelas antiaderentes.",
+    "imageUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/bamboo-spatula/thumbnail.webp"
+  },
+  {
+    "id": "liquidificador-compacto",
+    "name": "Liquidificador Compacto",
+    "category": "Cozinha > Eletroportáteis",
+    "brand": null,
+    "priceBRL": 189.9,
+    "attributes": {
+      "Potência": "600 W",
+      "Capacidade do copo": "1,5 L",
+      "Velocidades": "3 + pulsar",
+      "Voltagem": "127 V",
+      "Garantia": "5 anos"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/boxed-blender/thumbnail.webp"
+  },
+  {
+    "id": "tabua-de-corte",
+    "name": "Tábua de Corte",
+    "category": "Cozinha > Utensílios",
+    "brand": null,
+    "priceBRL": 59.9,
+    "attributes": {
+      "Dimensões": "40 x 28 x 2 cm",
+      "Garantia": "3 meses"
+    },
+    "notes": "Material não informado pelo fornecedor.",
+    "imageUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/chopping-board/thumbnail.webp"
+  },
+  {
+    "id": "marmita-compartimentos",
+    "name": "Marmita com Compartimentos",
+    "category": "Cozinha > Armazenamento",
+    "brand": null,
+    "priceBRL": 49.9,
+    "attributes": {
+      "Compartimentos": "3",
+      "Capacidade total": "1,2 L",
+      "Livre de BPA": "Sim",
+      "Vai ao micro-ondas": "Sim, sem a tampa"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/thumbnail.webp"
+  },
+  {
+    "id": "tenis-esportivo-branco-vermelho",
+    "name": "Tênis Esportivo Branco e Vermelho",
+    "category": "Moda Masculina > Calçados",
+    "brand": "Off White",
+    "priceBRL": 599.9,
+    "attributes": {
+      "Numeração": "38 ao 44",
+      "Cabedal": "Sintético",
+      "Solado": "Borracha"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/thumbnail.webp"
+  },
+  {
+    "id": "camisa-xadrez-masculina",
+    "name": "Camisa Xadrez Masculina",
+    "category": "Moda Masculina > Camisas",
+    "brand": "Classic Wear",
+    "priceBRL": 149.9,
+    "attributes": {
+      "Tamanhos": "P, M, G, GG",
+      "Composição": "100% algodão",
+      "Manga": "Longa",
+      "Modelagem": "Regular"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp"
+  },
+  {
+    "id": "luminaria-de-mesa",
+    "name": "Luminária de Mesa",
+    "category": "Casa > Iluminação",
+    "brand": null,
+    "priceBRL": 219.9,
+    "attributes": {
+      "Altura": "45 cm",
+      "Soquete": "E27",
+      "Lâmpada inclusa": "Não",
+      "Voltagem": "Bivolt"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/thumbnail.webp"
+  },
+  {
+    "id": "vaso-de-planta",
+    "name": "Vaso para Plantas",
+    "category": "Casa > Decoração",
+    "brand": null,
+    "priceBRL": 69.9,
+    "attributes": {
+      "Altura": "20 cm",
+      "Diâmetro": "14 cm"
+    },
+    "notes": "Sem furo de drenagem.",
+    "imageUrl": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp"
+  },
+  {
+    "id": "mochila-couro-sintetico-branca",
+    "name": "Mochila Feminina Branca",
+    "category": "Moda Feminina > Bolsas",
+    "brand": "Urban Chic",
+    "priceBRL": 229.9,
+    "attributes": {
+      "Material": "Couro sintético",
+      "Dimensões": "30 x 25 x 12 cm",
+      "Compartimentos": "1 principal e 1 bolso frontal",
+      "Garantia": "2 anos"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/thumbnail.webp"
+  },
+  {
+    "id": "raquete-de-tenis",
+    "name": "Raquete de Tênis",
+    "category": "Esporte > Tênis",
+    "brand": null,
+    "priceBRL": 349.9,
+    "attributes": {
+      "Peso": "285 g",
+      "Tamanho da cabeça": "100 pol²",
+      "Garantia": "5 anos"
+    },
+    "notes": "Vendida sem encordoamento.",
+    "imageUrl": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/thumbnail.webp"
+  },
+  {
+    "id": "vestido-verao-infantil",
+    "name": "Vestido de Verão Infantil",
+    "category": "Moda Infantil > Vestidos",
+    "brand": null,
+    "priceBRL": 89.9,
+    "attributes": {
+      "Tamanhos": "4, 6, 8 e 10 anos",
+      "Composição": "Viscose"
+    },
+    "notes": null,
+    "imageUrl": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp"
+  },
+  {
+    "id": "oculos-de-sol-preto",
+    "name": "Óculos de Sol Preto",
+    "category": "Acessórios > Óculos",
+    "brand": "Fashion Shades",
+    "priceBRL": 159.9,
+    "attributes": {
+      "Proteção UV": "UV400",
+      "Armação": "Acetato"
+    },
+    "notes": "Sem garantia.",
+    "imageUrl": "https://cdn.dummyjson.com/product-images/sunglasses/black-sun-glasses/thumbnail.webp"
+  }
+]

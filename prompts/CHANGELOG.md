@@ -1,0 +1,21 @@
+# Prompt changelog
+
+Prompts are versioned like code: a new idea is a new file, never an edit to an old one, so every benchmark result can be traced to the exact text that produced it.
+
+## v3-few-shot
+
+Same rules as v2, plus one complete worked example (a product that is not in the catalog) showing a gap in the spec sheet going to `missingInfo` instead of into the copy.
+
+Hypothesis: a concrete example teaches tone, length and the "don't invent" rule better than rules alone.
+
+## v2-grounded
+
+Explains who reads the copy and why accuracy matters (published without review, consumer-protection risk), then sets the grounding rules: the spec sheet is the only source of facts, the photo only for what is visible, missing data goes to `missingInfo`, no price, no promises, pt-BR without markdown.
+
+Hypothesis: giving the model the reason behind each rule reduces invented facts compared with v1.
+
+## v1-baseline
+
+What most people write first: a one-line role and the spec sheet. The JSON schema is still enforced, so the shape is always right; only the content can go wrong.
+
+Purpose: the baseline every other version is measured against.
