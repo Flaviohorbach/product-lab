@@ -69,12 +69,20 @@ npm install
 cp .env.example .env          # then paste your key into .env
 npm run generate              # one product, default model and prompt
 npm run generate -- --product tabua-de-corte --prompt v1-baseline --model gemini-3.1-flash-lite
-npm run bench -- --limit 4    # 3 models × 3 prompts × 4 products
-npm run bench                 # full grid: 108 generations, about 10 minutes on the free tier
+npm run bench                 # runs what is missing from the 3 models × 3 prompts × 12 products grid
+npm run bench -- --models gemini-3.6-flash --limit 4
 npm test                      # offline tests, no key needed
 ```
 
-The free tier allows only a few requests per minute, so the benchmark waits 4 seconds between calls (`--delay`) and backs off on rate limits.
+### Living with free-tier quotas
+
+The first full run failed in an instructive way. The free tier allows about **20 requests per model per day**, and every attempt counts, failed ones included. The adapter was retrying "high demand" errors (503) up to five times, so three overloaded calls used the whole day's quota of one model before a single answer came back.
+
+What changed:
+
+- **Daily quota is not a transient error.** A `429 ... per day` becomes a `QuotaExhaustedError`: no retry, and the benchmark skips that model until the next run.
+- **Fewer, slower retries** for 503 and per-minute 429 (2 extra attempts, waiting 10 s then 20 s), and SDK-level retries are off so they do not stack on top.
+- **Resumable benchmark.** Each result is written to `results/progress.json` as soon as it arrives, and the next run only does what is missing. The full grid (36 calls per model) completes over two or three days. Products are run with all three prompts before moving on, so a partial result still compares prompts on the same products.
 
 ## Data
 

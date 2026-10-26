@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { parseArgs } from "node:util";
 import { runChecks, summarize, summaryMarkdown, toRecord, type RunRecord } from "../bench";
 import { loadEnv } from "../env";
@@ -8,76 +8,90 @@ import { MODELS, PRICES_CHECKED_ON, findModel } from "../models";
 import { loadProducts } from "../product";
 import { listPromptVersions, loadPrompt } from "../prompts";
 import { GeminiProvider } from "../providers/gemini";
+import { QuotaExhaustedError } from "../providers/types";
 
-// Usage: npm run bench -- [--models a,b] [--prompts v1-baseline,v2-grounded] [--limit 4] [--delay 4000]
+// Usage: npm run bench -- [--models a,b] [--prompts v1-baseline,v2-grounded] [--limit 4] [--delay 6000] [--fresh]
+//
+// Resumable: every result is saved to results/progress.json as soon as it arrives,
+// and a new run skips what is already there. The free tier allows ~20 requests per
+// model per day, so a full grid (36 per model) is meant to be completed over days.
 loadEnv();
 const { values } = parseArgs({
   options: {
     models: { type: "string", default: MODELS.map((m) => m.id).join(",") },
     prompts: { type: "string" },
     limit: { type: "string" },
-    // The free tier allows only a few requests per minute; spacing calls avoids most 429s.
-    delay: { type: "string", default: "4000" },
+    // The free tier also limits requests per minute; spacing calls avoids most 429s.
+    delay: { type: "string", default: "6000" },
+    fresh: { type: "boolean", default: false },
   },
 });
 
+const PROGRESS = "results/progress.json";
 const models = values.models.split(",").map(findModel);
 const prompts = await Promise.all((values.prompts?.split(",") ?? (await listPromptVersions())).map((v) => loadPrompt(v)));
 const products = (await loadProducts()).slice(0, values.limit ? Number(values.limit) : undefined);
 const delay = Number(values.delay);
 const provider = new GeminiProvider();
 
-const total = models.length * prompts.length * products.length;
-console.log(`Running ${total} generations: ${models.length} models × ${prompts.length} prompts × ${products.length} products\n`);
-
-const records: RunRecord[] = [];
-let aborted = false;
-outer: for (const model of models) {
-  for (const prompt of prompts) {
-    for (const product of products) {
-      const n = records.length + 1;
-      process.stdout.write(`[${n}/${total}] ${model.id} · ${prompt.version} · ${product.id} … `);
-      try {
-        const result = await generateCopy({ provider, model: model.id, prompt, product, image: await loadImage(product.imageUrl) });
-        const checks = result.copy ? runChecks(result.copy, product) : [];
-        records.push(toRecord({ model: model.id, prompt: prompt.version, product: product.id, ...result }, model, checks));
-        const failed = checks.filter((c) => !c.passed).map((c) => c.id);
-        console.log(result.copy ? (failed.length ? `✗ ${failed.join(", ")}` : "✓") : `invalid: ${result.error}`);
-      } catch (error) {
-        // A bad key fails every call the same way: stop instead of burning through the whole grid.
-        if ((error as Error).message.startsWith("GEMINI_API_KEY")) {
-          console.log(`\n${(error as Error).message}`);
-          aborted = true;
-          break outer;
-        }
-        // Other hard failures (e.g. a model that is not available) are recorded and the run continues.
-        records.push(
-          toRecord(
-            {
-              model: model.id, prompt: prompt.version, product: product.id, copy: null, error: (error as Error).message,
-              usage: { inputTokens: 0, outputTokens: 0, thoughtTokens: 0 }, latencyMs: 0, attempts: 0,
-            },
-            model,
-            [],
-          ),
-        );
-        console.log(`error: ${(error as Error).message}`);
-      }
-      if (n < total) await new Promise((resolve) => setTimeout(resolve, delay));
-    }
+let records: RunRecord[] = [];
+if (!values.fresh) {
+  try {
+    records = JSON.parse(await readFile(PROGRESS, "utf8"));
+  } catch {
+    // First run: no progress file yet.
   }
+}
+const key = (model: string, prompt: string, product: string) => `${model}|${prompt}|${product}`;
+const done = new Set(records.map((r) => key(r.model, r.prompt, r.product)));
+
+const todo = models.flatMap((model) =>
+  products.flatMap((product) => prompts.map((prompt) => ({ model, product, prompt }))),
+).filter(({ model, prompt, product }) => !done.has(key(model.id, prompt.version, product.id)));
+
+console.log(`${done.size} results already saved, ${todo.length} to run.\n`);
+await mkdir("results", { recursive: true });
+
+const exhausted = new Set<string>();
+let aborted = false;
+for (const [i, { model, prompt, product }] of todo.entries()) {
+  if (exhausted.has(model.id)) continue;
+  process.stdout.write(`[${i + 1}/${todo.length}] ${model.id} · ${prompt.version} · ${product.id} … `);
+  try {
+    const result = await generateCopy({ provider, model: model.id, prompt, product, image: await loadImage(product.imageUrl) });
+    const checks = result.copy ? runChecks(result.copy, product) : [];
+    // Invalid answers are a real result (the model failed the task), so they are saved too.
+    records.push(toRecord({ model: model.id, prompt: prompt.version, product: product.id, ...result }, model, checks));
+    await writeFile(PROGRESS, JSON.stringify(records, null, 2));
+    const failed = checks.filter((c) => !c.passed).map((c) => c.id);
+    console.log(result.copy ? (failed.length ? `✗ ${failed.join(", ")}` : "✓") : `invalid: ${result.error}`);
+  } catch (error) {
+    const message = (error as Error).message;
+    if (message.startsWith("GEMINI_API_KEY")) {
+      console.log(`\n${message}`);
+      aborted = true;
+      break;
+    }
+    if (error instanceof QuotaExhaustedError) {
+      exhausted.add(model.id);
+      console.log(`daily quota used up, skipping ${model.id} for today`);
+      continue;
+    }
+    // Overload that outlasted the retries, a model not enabled for the key...
+    // Not saved, so the next run tries it again.
+    console.log(`error: ${message}`);
+  }
+  await new Promise((resolve) => setTimeout(resolve, delay));
 }
 
 if (aborted) {
   process.exitCode = 1;
 } else {
   const date = new Date().toISOString().slice(0, 10);
-  const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
-  const markdown = summaryMarkdown(summarize(records), { date, products: products.length, pricesCheckedOn: PRICES_CHECKED_ON });
-
-  await mkdir("results", { recursive: true });
-  await writeFile(`results/${stamp}.json`, JSON.stringify(records, null, 2));
-  await writeFile(`results/${stamp}.md`, markdown);
+  const markdown = summaryMarkdown(summarize(records), { date, pricesCheckedOn: PRICES_CHECKED_ON });
   await writeFile("results/latest.md", markdown);
-  console.log(`\n${markdown}\nSaved results/${stamp}.json and results/latest.md`);
+
+  const remaining = todo.length - (records.length - done.size);
+  console.log(`\n${markdown}\nSaved ${PROGRESS} and results/latest.md.`);
+  if (remaining > 0) console.log(`${remaining} combinations still missing: run \`npm run bench\` again later to continue.`);
 }

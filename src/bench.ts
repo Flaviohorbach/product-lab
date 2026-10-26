@@ -73,19 +73,19 @@ export function summarize(records: RunRecord[]): Summary[] {
 
 const pct = (value: number) => `${Math.round(value * 100)}%`;
 
-export function summaryMarkdown(summaries: Summary[], meta: { date: string; products: number; pricesCheckedOn: string }): string {
+export function summaryMarkdown(summaries: Summary[], meta: { date: string; pricesCheckedOn: string }): string {
   const rows = [...summaries]
     .sort((a, b) => b.cleanRate - a.cleanRate || a.costPer1000USD - b.costPer1000USD)
     .map((s) => {
       const failures = Object.entries(s.failuresByCheck).map(([id, n]) => `${id} ×${n}`).join(", ") || "–";
-      return `| ${s.model} | ${s.prompt} | ${pct(s.validRate)} | ${pct(s.cleanRate)} | ${failures} | ${(s.avgLatencyMs / 1000).toFixed(1)} s | ${Math.round(s.avgOutputTokens)} | $${s.costPer1000USD.toFixed(2)} |`;
+      return `| ${s.model} | ${s.prompt} | ${s.runs} | ${pct(s.validRate)} | ${pct(s.cleanRate)} | ${failures} | ${(s.avgLatencyMs / 1000).toFixed(1)} s | ${Math.round(s.avgOutputTokens)} | $${s.costPer1000USD.toFixed(2)} |`;
     });
 
   return [
-    `Benchmark of ${meta.date}: ${meta.products} products per row. Prices checked on ${meta.pricesCheckedOn}.`,
+    `Updated ${meta.date}. Prices checked on ${meta.pricesCheckedOn}. Output tokens include thinking tokens.`,
     "",
-    "| Model | Prompt | Valid | All checks pass | Failed checks | Avg latency | Output tokens | Cost / 1,000 products |",
-    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    "| Model | Prompt | Products | Valid | All checks pass | Failed checks | Avg latency | Output tokens | Cost / 1,000 products |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ...rows,
     "",
   ].join("\n");

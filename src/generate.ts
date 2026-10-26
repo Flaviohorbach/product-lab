@@ -21,7 +21,10 @@ export interface GenerateOptions {
   image?: { mimeType: string; base64: string };
   /** Attempts when the answer does not pass schema validation. */
   maxAttempts?: number;
-  /** Attempts when the provider is rate limited or overloaded. */
+  /**
+   * Extra attempts when the provider is rate limited or overloaded. Kept low on
+   * purpose: on the free tier every attempt, failed or not, counts toward the daily quota.
+   */
   maxTransientRetries?: number;
   sleep?: (ms: number) => Promise<void>;
 }
@@ -32,12 +35,13 @@ const defaultSleep = (ms: number) => new Promise<void>((resolve) => setTimeout(r
  * One product → one validated copy.
  *
  * Two different kinds of retry live here:
- *  - transient errors (429, 503): wait with exponential backoff and send the same request again;
+ *  - transient errors (per-minute 429, 503): wait with exponential backoff and send the same request again;
+ *    a used-up daily quota (QuotaExhaustedError) is not transient and is passed straight to the caller;
  *  - invalid answers (bad JSON, a field over its limit): send the request again with the
  *    validation error appended, so the model knows exactly what to fix.
  */
 export async function generateCopy(options: GenerateOptions): Promise<GenerationResult> {
-  const { provider, model, prompt, product, image, maxAttempts = 2, maxTransientRetries = 4, sleep = defaultSleep } = options;
+  const { provider, model, prompt, product, image, maxAttempts = 2, maxTransientRetries = 2, sleep = defaultSleep } = options;
   const usage: TokenUsage = { inputTokens: 0, outputTokens: 0, thoughtTokens: 0 };
   let latencyMs = 0;
   let feedback = "";
@@ -53,7 +57,7 @@ export async function generateCopy(options: GenerateOptions): Promise<Generation
         break;
       } catch (error) {
         if (!(error instanceof RetryableProviderError) || transient >= maxTransientRetries) throw error;
-        await sleep(error.retryAfterMs ?? 2000 * 2 ** transient);
+        await sleep(error.retryAfterMs ?? 10_000 * 2 ** transient);
       }
     }
 

@@ -30,7 +30,17 @@ export interface LlmProvider {
   generate(request: GenerateRequest): Promise<GenerateResponse>;
 }
 
-/** Thrown by adapters for errors worth retrying later (rate limit, overload, timeout). */
+/** The model's quota for the day (or billing period) is used up. Not retryable. */
+export class QuotaExhaustedError extends Error {
+  constructor(
+    readonly model: string,
+    message: string,
+  ) {
+    super(message);
+  }
+}
+
+/** Thrown by adapters for errors worth retrying soon (per-minute rate limit, overload, timeout). */
 export class RetryableProviderError extends Error {
   constructor(
     message: string,

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { generateCopy, parseCopy } from "../src/generate";
 import { parsePrompt } from "../src/prompts";
-import { RetryableProviderError } from "../src/providers/types";
+import { QuotaExhaustedError, RetryableProviderError } from "../src/providers/types";
 import { FakeProvider, blender, goodCopy } from "./helpers";
 
 const prompt = parsePrompt("test", "# system\nVocê é um redator.\n# user\n{{specSheet}}");
@@ -42,6 +42,12 @@ describe("generateCopy", () => {
     expect(result.copy).toEqual(goodCopy);
     expect(result.attempts).toBe(1);
     expect(provider.requests).toHaveLength(2);
+  });
+
+  it("does not retry a used-up daily quota, so it does not burn more of it", async () => {
+    const provider = new FakeProvider([new QuotaExhaustedError("fake-model", "20 requests per day"), JSON.stringify(goodCopy)]);
+    await expect(run(provider)).rejects.toBeInstanceOf(QuotaExhaustedError);
+    expect(provider.requests).toHaveLength(1);
   });
 
   it("does not retry errors that will not go away", async () => {

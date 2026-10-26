@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { RetryableProviderError, type GenerateRequest, type GenerateResponse, type LlmProvider } from "./types";
+import { QuotaExhaustedError, RetryableProviderError, type GenerateRequest, type GenerateResponse, type LlmProvider } from "./types";
 
 const TIMEOUT_MS = 90_000;
 
@@ -61,6 +61,10 @@ export class GeminiProvider implements LlmProvider {
       }
       if (/timeout|abort/i.test(`${name} ${(error as Error).message}`)) {
         throw new RetryableProviderError(`Gemini did not answer within ${TIMEOUT_MS / 1000} s`);
+      }
+      // A daily quota will not recover in seconds: retrying only burns more of tomorrow's.
+      if (status === 429 && /per day/i.test((error as Error).message)) {
+        throw new QuotaExhaustedError(request.model, (error as Error).message);
       }
       if (status === 429 || status === 500 || status === 503 || status === 504) {
         throw new RetryableProviderError(`Gemini returned ${status}: ${(error as Error).message}`);

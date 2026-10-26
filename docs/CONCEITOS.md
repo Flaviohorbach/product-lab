@@ -70,6 +70,19 @@ Dois tipos de falha, dois tratamentos (veja `src/generate.ts`):
 
 Repetir sem informar o erro tende a gerar o mesmo erro. Informar o erro é uma forma simples de **prompt chaining**: a saída de uma chamada vira entrada da próxima.
 
+### Lição aprendida na prática: cota diária
+
+Na primeira execução real, o benchmark não gerou nenhum texto. O plano gratuito permite cerca de **20 requisições por modelo por dia**, e **toda tentativa conta, inclusive as que falham**. O código repetia até 5 vezes cada erro 503 ("alta demanda"), então três chamadas azaradas consumiram a cota do dia inteiro.
+
+O que mudou:
+
+- `429 ... per day` virou um erro próprio (`QuotaExhaustedError`), que **não** é repetido. Esperar 10 segundos não resolve uma cota que só volta amanhã.
+- Menos repetições para 503, com esperas maiores (10 s, depois 20 s).
+- O SDK também repetia por conta própria, multiplicando as tentativas. Desliguei: quem decide é o nosso código, que conhece o motivo do erro.
+- O benchmark ficou **retomável**: salva cada resultado na hora e, na próxima execução, só roda o que falta.
+
+Em entrevista, essa história vale mais que um projeto que "funcionou de primeira": mostra que você entende que **toda nova tentativa tem custo** (dinheiro, cota, latência) e que tratar erros é classificar por causa, não repetir tudo.
+
 ## 7. Avaliação (evals)
 
 "Achei que ficou bom" não é métrica. O benchmark (`npm run bench`) roda cada combinação de modelo × prompt sobre os 12 produtos e mede:
