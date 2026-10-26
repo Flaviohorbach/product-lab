@@ -15,10 +15,12 @@ export interface CheckResult {
   detail?: string;
 }
 
+// Specific materials only. Generic words like "tecido" (fabric) were removed after
+// the first benchmark: "feito de viscose, um tecido leve" is grounded, not invented.
 const MATERIALS = [
   "madeira", "bambu", "plástico", "plastico", "aço", "inox", "alumínio", "aluminio", "vidro", "cerâmica",
   "ceramica", "silicone", "metal", "couro", "algodão", "algodao", "poliéster", "poliester", "viscose",
-  "linho", "borracha", "acetato", "policarbonato", "carbono", "grafite", "tecido", "nylon", "náilon",
+  "linho", "borracha", "acetato", "policarbonato", "carbono", "grafite", "nylon", "náilon",
 ];
 
 const PROMISES = [

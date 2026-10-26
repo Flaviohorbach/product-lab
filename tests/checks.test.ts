@@ -24,6 +24,13 @@ describe("runChecks", () => {
     expect(failed(copy).map((c) => c.id)).toEqual(["materials-grounded"]);
   });
 
+  it("does not treat generic words like 'tecido' as invented materials", () => {
+    const dress = { ...blender, attributes: { "Composição": "Viscose" } };
+    const copy = { ...goodCopy, highlights: ["Feito em viscose, um tecido leve", "Ideal para o verão", "Modelagem solta"] };
+    const ids = runChecks(copy, dress).filter((c) => !c.passed).map((c) => c.id);
+    expect(ids).not.toContain("materials-grounded");
+  });
+
   it("flags a warranty when the spec sheet has none", () => {
     const { Garantia: _, ...attributes } = blender.attributes;
     const product = { ...blender, attributes };

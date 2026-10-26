@@ -8,11 +8,15 @@ Same rules as v2, plus one complete worked example (a product that is not in the
 
 Hypothesis: a concrete example teaches tone, length and the "don't invent" rule better than rules alone.
 
+Result (2026-10-26): **not confirmed.** Same check results as v2 on both models, with higher latency (9.4 s vs 4.2 s on flash-lite) and slightly higher cost. v2 stays the default.
+
 ## v2-grounded
 
 Explains who reads the copy and why accuracy matters (published without review, consumer-protection risk), then sets the grounding rules: the spec sheet is the only source of facts, the photo only for what is visible, missing data goes to `missingInfo`, no price, no promises, pt-BR without markdown.
 
 Hypothesis: giving the model the reason behind each rule reduces invented facts compared with v1.
+
+Result (2026-10-26): **confirmed.** No detected inventions on either model (v1: 33% to 75% of products had at least one).
 
 ## v1-baseline
 

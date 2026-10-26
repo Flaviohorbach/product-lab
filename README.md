@@ -10,7 +10,29 @@ spec sheet + photo → prompt (versioned) → Gemini (JSON schema) → validatio
 
 ## Results
 
-> Run `npm run bench` to fill this section. Results land in [`results/latest.md`](results/latest.md).
+First round, 46 generations (2026-10-26). The free tier's daily quota cut `gemini-3.6-flash` at 4 products and `gemini-3.8-flash` at zero; the grid is being completed over the next days ([`results/latest.md`](results/latest.md) is always current).
+
+| Model | Prompt | Products | Valid JSON | No invented facts | Avg latency | Output tokens¹ | Cost / 1,000 products |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| gemini-3.1-flash-lite | v2-grounded | 11 | 100% | **100%** | 4.2 s | 472 | **$1.07** |
+| gemini-3.1-flash-lite | v3-few-shot | 11 | 100% | 100% | 9.4 s | 483 | $1.23 |
+| gemini-3.6-flash | v2-grounded | 4 | 100% | 100% | 13.4 s | 1,944 | $8.37 |
+| gemini-3.6-flash | v3-few-shot | 4 | 100% | 100% | 15.2 s | 2,017 | $8.97 |
+| gemini-3.1-flash-lite | v1-baseline | 12 | 100% | 67% | 7.1 s | 592 | $1.21 |
+| gemini-3.6-flash | v1-baseline | 4 | 100% | 25% | 11.8 s | 2,011 | $8.43 |
+
+¹ Including thinking tokens, which are billed as output.
+
+**What the numbers say**
+
+1. **The prompt matters more than the model.** With the one-line baseline prompt, both models invented facts in 33% to 75% of the products: "wooden chopping board" when the spec sheet says the material is unknown, "stainless steel lunch box", "guaranteed protection", the price inside the SEO title. With the grounded prompt (v2), zero detected inventions on either model.
+2. **The cheapest model is enough here.** `gemini-3.1-flash-lite` with v2 matched the bigger model on every check, at **1/8 of the cost and 1/3 of the latency**. The bigger model thinks a lot (about 1,400 thinking tokens per product), which is where its cost goes.
+3. **The few-shot example did not pay off.** v3 scored the same as v2 while being slower and slightly more expensive. The hypothesis in the [changelog](prompts/CHANGELOG.md) was wrong for this task, and that is a useful result too.
+4. **JSON was never the problem.** Structured output gave 100% valid responses everywhere. The failures are all in the content.
+
+**The example that sums it up.** For the chopping board, the baseline prompt listed *"exact type of material"* under `missingInfo`, and in the same answer wrote the SEO title *"Tábua de Corte em Madeira"*. The model knew it did not know, and invented it anyway. The grounded prompt kept the material out of the copy and in `missingInfo`.
+
+**Limits of these checks.** They catch invented numbers, materials, warranties, prices and promises. They do not catch everything: one baseline output called the sunglasses "Clubmaster", a model name that is nowhere in the spec sheet. Catching that kind of invention needs a judge model, planned for module 10. One false positive was also found and fixed: "viscose, um **tecido** leve" was flagged as an invented material; generic words were removed from the list, and saved outputs are re-scored for free on every run (`npm run bench -- --dry-run`).
 
 ## How it works
 

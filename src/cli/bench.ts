@@ -24,6 +24,8 @@ const { values } = parseArgs({
     // The free tier also limits requests per minute; spacing calls avoids most 429s.
     delay: { type: "string", default: "6000" },
     fresh: { type: "boolean", default: false },
+    // Re-score saved outputs and rewrite the summary without calling the model.
+    "dry-run": { type: "boolean", default: false },
   },
 });
 
@@ -42,12 +44,19 @@ if (!values.fresh) {
     // First run: no progress file yet.
   }
 }
+// Checks are re-run on every saved output, so improving a check (or fixing a false
+// positive) updates old results for free, with no new API calls.
+const catalog = new Map((await loadProducts()).map((p) => [p.id, p]));
+records = records.map((r) => (r.copy ? { ...r, checks: runChecks(r.copy, catalog.get(r.product)!) } : r));
+
 const key = (model: string, prompt: string, product: string) => `${model}|${prompt}|${product}`;
 const done = new Set(records.map((r) => key(r.model, r.prompt, r.product)));
 
-const todo = models.flatMap((model) =>
-  products.flatMap((product) => prompts.map((prompt) => ({ model, product, prompt }))),
-).filter(({ model, prompt, product }) => !done.has(key(model.id, prompt.version, product.id)));
+const todo = values["dry-run"]
+  ? []
+  : models.flatMap((model) =>
+      products.flatMap((product) => prompts.map((prompt) => ({ model, product, prompt }))),
+    ).filter(({ model, prompt, product }) => !done.has(key(model.id, prompt.version, product.id)));
 
 console.log(`${done.size} results already saved, ${todo.length} to run.\n`);
 await mkdir("results", { recursive: true });

@@ -1,0 +1,3509 @@
+[
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu Culinária 30cm para Antiaderente",
+      "shortDescription": "Espátula de bambu de 30 cm ideal para preparar e servir alimentos sem riscar suas panelas e frigideiras antiaderentes.",
+      "longDescription": "A Espátula de Bambu de 30 cm é a escolha perfeita para quem busca praticidade, sustentabilidade e cuidado ao cozinhar. Produzida em bambu resistente e ecológico, ela é ideal para preparar e misturar receitas do dia a dia, garantindo excelente manuseio.\n\nSeu material é leve e seguro para uso em utensílios com revestimento antiaderente, pois não risca e nem danifica o fundo das suas panelas e frigideiras. Além disso, o acabamento natural traz um toque charmoso e moderno para a decoração da sua cozinha.\n\nCom design funcional, conta com furo no cabo para facilitar o armazenamento pendurado em suportes. É fácil de limpar e muito durável, tornando-se um item indispensável para facilitar sua rotina culinária.",
+      "highlights": [
+        "Fabricada em bambu ecológico e resistente",
+        "Não risca revestimentos antiaderentes",
+        "Comprimento de 30 cm para manuseio seguro",
+        "Furo no cabo para facilitar a organização"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30cm Culinária para Panela Antiaderente",
+        "metaDescription": "Compre sua espátula de bambu 30 cm. Ideal para panelas antiaderentes, não risca e traz sustentabilidade para sua cozinha. Confira!",
+        "keywords": [
+          "espatula de bambu",
+          "utensilio de bambu",
+          "espatula culinaria",
+          "espatula para antiaderente",
+          "utensilios de cozinha",
+          "espatula de madeira"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Bege",
+          "Madeira clara"
+        ],
+        "notes": "A imagem revela um furo circular na base do cabo para pendurar e uma lâmina reta levemente alargada no topo."
+      },
+      "missingInfo": [
+        "Temperatura máxima suportada",
+        "Pode ou não ir à lava-louças",
+        "Peso do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1183,
+      "outputTokens": 556,
+      "thoughtTokens": 1320
+    },
+    "latencyMs": 10446,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00792225
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu 30 cm",
+      "shortDescription": "Espátula de bambu com 30 cm de comprimento, indicada para uso em panelas antiaderentes e com furo no cabo para pendurar.",
+      "longDescription": "A espátula de bambu com 30 cm de comprimento é um utensílio para o preparo de alimentos na cozinha. Desenvolvida em bambu, seu uso é adequado para panelas e recipientes com revestimento antiaderente.\n\nNa extremidade do cabo, o utensílio conta com um furo passante para facilitar a organização, permitindo que seja pendurado em ganchos. O produto conta com 1 mês de garantia fornecida pelo fabricante.",
+      "highlights": [
+        "Comprimento total de 30 cm",
+        "Fabricada em bambu",
+        "Compatível com panelas antiaderentes",
+        "Possui furo no cabo para pendurar",
+        "Garantia de 1 mês"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30cm para Panelas Antiaderentes",
+        "metaDescription": "Conheça a espátula de bambu de 30 cm de comprimento. Utensílio adequado para panelas antiaderentes e com furo no cabo para pendurar.",
+        "keywords": [
+          "espatula de bambu",
+          "espatula 30 cm",
+          "utensilio de cozinha",
+          "espatula antiaderente",
+          "espatula para cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Bege",
+          "Tom natural de bambu"
+        ],
+        "notes": "A foto mostra a espátula com cabeça plana e reta, além de um furo circular no cabo para fixação em suporte."
+      },
+      "missingInfo": [
+        "Marca do produto",
+        "Largura e espessura",
+        "Peso do produto",
+        "Indicação de uso em lava-louças",
+        "Resistência máxima a temperaturas"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1436,
+      "outputTokens": 490,
+      "thoughtTokens": 1114
+    },
+    "latencyMs": 11292,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.007092
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu 30 cm",
+      "shortDescription": "Espátula de bambu com 30 cm de comprimento, indicada para o uso em panelas com revestimento antiaderente.",
+      "longDescription": "A Espátula de Bambu tem 30 cm de comprimento e é feita em bambu. É indicada para preparar alimentos na cozinha e pode ser usada em panelas antiaderentes sem risco de danificar o revestimento.\n\nO produto conta com 1 mês de garantia.",
+      "highlights": [
+        "Fabricada em bambu",
+        "Comprimento de 30 cm",
+        "Uso seguro em panelas antiaderentes",
+        "Garantia de 1 mês"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30 cm | Utensílio para Cozinha",
+        "metaDescription": "Espátula de bambu com 30 cm de comprimento. Pode ser usada em panelas antiaderentes. Garantia de 1 mês. Confira!",
+        "keywords": [
+          "espátula de bambu",
+          "utensílio de bambu",
+          "espátula 30 cm",
+          "espátula para panela antiaderente",
+          "utensílio para cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "bege"
+        ],
+        "notes": "Furo na extremidade do cabo para pendurar."
+      },
+      "missingInfo": [
+        "Se pode ir à lava-louças",
+        "Largura e peso do produto",
+        "Temperatura máxima suportada",
+        "Marca"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1869,
+      "outputTokens": 399,
+      "thoughtTokens": 1272
+    },
+    "latencyMs": 16295,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.007668
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W 1,5L 3 Velocidades 127V",
+      "shortDescription": "Liquidificador compacto de 600W com jarra de 1,5L, 3 velocidades mais função pulsar e acabamento em inox para praticidade no dia a dia.",
+      "longDescription": "O Liquidificador Compacto é a solução ideal para quem busca eficiência e praticidade na cozinha sem ocupar muito espaço. Com motor potente de 600W e jarra transparente graduada com capacidade de 1,5 litros, ele permite preparar sucos, vitaminas, molhos e massas leves com facilidade e rapidez no seu dia a dia.\n\nSeu painel conta com seletor de 3 velocidades mais a função pulsar, garantindo o controle exato da textura desejada para cada receita. Além disso, a base robusta com acabamento estilo aço inox e pés antiderrapantes oferece maior estabilidade e segurança durante o uso, agregando sofisticação à sua bancada.\n\nProjetado para durar, o aparelho conta com garantia estendida de 5 anos, garantindo tranquilidade e confiança para suas rotinas culinárias. Um item indispensável que une design moderno, funcionalidade e alta durabilidade para a sua casa.",
+      "highlights": [
+        "Potência de 600W para misturar e triturar com eficiência",
+        "Jarra transparente graduada com capacidade útil de 1,5L",
+        "3 velocidades ajustáveis + função pulsar",
+        "Base com acabamento metálico em inox e pés antiderrapantes",
+        "Garantia estendida de fábrica de 5 anos"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L 127V - 5 Anos de Garantia",
+        "metaDescription": "Compre seu Liquidificador Compacto 600W com jarra de 1,5L, 3 velocidades, pulsar e 5 anos de garantia. Praticidade para sua cozinha!",
+        "keywords": [
+          "liquidificador compacto",
+          "liquidificador 600w",
+          "liquidificador 1.5l",
+          "liquidificador 127v",
+          "eletroportateis cozinha",
+          "liquidificador inox"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prata",
+          "Cinza escuro",
+          "Azul",
+          "Transparente"
+        ],
+        "notes": "O produto apresenta base em tom prata/inox escovado, pés com ventosas e detalhe em cor azul/roxa ao redor do botão seletor."
+      },
+      "missingInfo": [
+        "Material da jarra (se é vidro, acrílico ou plástico BPA Free)",
+        "Material e quantidade de lâminas, e se são removíveis para limpeza",
+        "Marca/fabricante do produto",
+        "Dimensões exatas (altura, largura, profundidade) e peso",
+        "Comprimento do cabo de alimentação"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1196,
+      "outputTokens": 712,
+      "thoughtTokens": 1586
+    },
+    "latencyMs": 13344,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "aço, inox"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0095145
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W 1,5L 127V",
+      "shortDescription": "Liquidificador compacto com 600 W de potência, copo de 1,5 litros, 3 velocidades mais função pulsar e voltagem de 127 V com 5 anos de garantia.",
+      "longDescription": "O Liquidificador Compacto possui motor com potência de 600 W e opera na voltagem de 127 V. Seu copo conta com capacidade de 1,5 litro, oferecendo o volume ideal para o preparo de bebidas e receitas no dia a dia.\n\nPara o controle do preparo, o aparelho disponibiliza 3 velocidades selecionáveis e a função pulsar. O modelo possui 5 anos de garantia oferecidos pelo fabricante.",
+      "highlights": [
+        "Potência de 600 W e voltagem 127 V",
+        "Copo com capacidade de 1,5 litros",
+        "3 velocidades mais função pulsar",
+        "Garantia de 5 anos"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L 127V",
+        "metaDescription": "Compre o Liquidificador Compacto 600W com copo de 1,5L, 3 velocidades, função pulsar e voltagem 127V. Conta com 5 anos de garantia.",
+        "keywords": [
+          "liquidificador compacto",
+          "liquidificador 600w",
+          "eletroportateis cozinha",
+          "liquidificador 127v",
+          "liquidificador 1,5l"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prata",
+          "Cinza-escuro",
+          "Azul",
+          "Transparente"
+        ],
+        "notes": "O produto apresenta base prateada, botão seletor giratório com detalhe azul e copo transparente com marcações de dosagem."
+      },
+      "missingInfo": [
+        "Marca do produto",
+        "Material do copo (plástico, acrílico ou vidro)",
+        "Material e quantidade de lâminas",
+        "Dimensões e peso do aparelho",
+        "Comprimento do cabo de energia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1449,
+      "outputTokens": 540,
+      "thoughtTokens": 1590
+    },
+    "latencyMs": 18343,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00907425
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W 1,5L 127V",
+      "shortDescription": "Liquidificador compacto de 600W com copo de 1,5L, 3 velocidades mais função pulsar, voltagem 127V e garantia de 5 anos.",
+      "longDescription": "O Liquidificador Compacto possui potência de 600 W e copo com capacidade de 1,5 litro, adequado para o preparo de sucos, vitaminas e receitas do dia a dia. Seu controle conta com 3 opções de velocidade e função pulsar, permitindo selecionar a intensidade ideal para cada tipo de ingrediente.\n\nEste modelo funciona na voltagem de 127 V e conta com garantia de 5 anos. Possui base com seletor giratório frontal para alternar as velocidades de maneira simples e prática.",
+      "highlights": [
+        "Potência de 600 W",
+        "Copo com capacidade de 1,5 L",
+        "3 velocidades + função pulsar",
+        "Voltagem de 127 V",
+        "Garantia de 5 anos"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L 127V | 5 Anos Garantia",
+        "metaDescription": "Liquidificador compacto de 600W com copo de 1,5L e 3 velocidades mais pulsar. Modelo em 127V com 5 anos de garantia. Confira!",
+        "keywords": [
+          "liquidificador compacto",
+          "liquidificador 600w",
+          "liquidificador 1,5l",
+          "liquidificador 127v",
+          "eletroportáteis de cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "prata",
+          "cinza",
+          "transparente",
+          "azul"
+        ],
+        "notes": "Copo transparente com marcas graduadas de medição, tampa cinza escuro e botão giratório com detalhe em azul."
+      },
+      "missingInfo": [
+        "Marca do produto",
+        "Material do copo (se é plástico, acrílico ou vidro)",
+        "Quantidade e material das lâminas",
+        "Dimensões e peso do produto",
+        "Indicação de compatibilidade com lava-louças"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1882,
+      "outputTokens": 561,
+      "thoughtTokens": 1814
+    },
+    "latencyMs": 18867,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.01031775
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte e Servir de Madeira 40x28cm",
+      "shortDescription": "Eleve a apresentação das suas refeições com esta tábua de corte versátil com acabamento amadeirado natural e bordas arredondadas.",
+      "longDescription": "A Tábua de Corte de 40x28 cm é a escolha ideal para quem busca praticidade e elegância na cozinha. Seu design alongado com extremidade arredondada traz um toque moderno e sofisticado tanto para o preparo dos alimentos no dia a dia quanto para a apresentação de frios, pães e petiscos ao servir seus convidados.\n\nCom espessura de 2 cm, o utensílio oferece excelente estabilidade e firmeza durante o uso. Seu visual em tons de madeira natural com acabamento em ripas combina perfeitamente com qualquer estilo de decoração, unindo utilidade e beleza em uma única peça.",
+      "highlights": [
+        "Dimensões amplas de 40 x 28 cm para maior praticidade",
+        "Espessura de 2 cm que garante firmeza durante o corte",
+        "Design sofisticado com extremidade arredondada",
+        "Multiuso: perfeita para preparar alimentos ou servir frios e petiscos"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte e Servir 40x28cm | Utensílios de Cozinha",
+        "metaDescription": "Compre sua Tábua de Corte 40x28 cm por R$ 59,90. Design amadeirado moderno com bordas arredondadas, perfeita para cortar e servir.",
+        "keywords": [
+          "tábua de corte",
+          "tábua de servir",
+          "tábua amadeirada",
+          "utensílios de cozinha",
+          "tábua de petiscos",
+          "tábua para frios"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Madeira natural",
+          "Bege"
+        ],
+        "notes": "A imagem mostra uma peça amadeirada formada por tiras coladas em paralelo com design de canto arredondado em uma das extremidades."
+      },
+      "missingInfo": [
+        "Tipo exato do material (ex.: bambu, madeira de teca, MDF ou pinus)",
+        "Instruções de lavagem e conservação (se pode ir ao lava-louças ou se necessita hidratação com óleo)",
+        "Peso do produto",
+        "Presença de tratamento antibacteriano ou atóxico"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1181,
+      "outputTokens": 607,
+      "thoughtTokens": 1507
+    },
+    "latencyMs": 12205,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "madeira"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": false
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00881325
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte 40 x 28 x 2 cm",
+      "shortDescription": "Tábua de corte com dimensões de 40 x 28 x 2 cm para preparo de alimentos na cozinha. Conta com garantia de 3 meses contra defeitos de fabricação.",
+      "longDescription": "A tábua de corte é um utensílio para o apoio e preparo de alimentos na cozinha. Suas dimensões de 40 cm de comprimento, 28 cm de largura e 2 cm de espessura oferecem uma área de trabalho funcional para o corte de ingredientes no dia a dia.\n\nO modelo possui formato retangular com cantos arredondados, facilitando o manuseio na bancada ou mesa de apoio durante o uso culinário.\n\nO produto conta com garantia de 3 meses contra defeitos de fabricação.",
+      "highlights": [
+        "Dimensões de 40 x 28 x 2 cm",
+        "Formato com cantos arredondados",
+        "Garantia de 3 meses",
+        "Utensílio para preparo de alimentos"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte 40x28x2 cm para Cozinha",
+        "metaDescription": "Confira a tábua de corte com medidas de 40 x 28 x 2 cm para sua cozinha. Produto com garantia de 3 meses.",
+        "keywords": [
+          "tabua de corte",
+          "utensilio de cozinha",
+          "tabua 40x28",
+          "preparo de alimentos"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "castanho claro",
+          "bege"
+        ],
+        "notes": "A imagem exibe uma tábua em tom de madeira com ripas longitudinais e extremidades arredondadas."
+      },
+      "missingInfo": [
+        "Composição ou tipo do material",
+        "Marca do fabricante",
+        "Peso do produto",
+        "Instruções de higienização e manutenção"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1434,
+      "outputTokens": 495,
+      "thoughtTokens": 1430
+    },
+    "latencyMs": 11366,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00829425
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte 40 x 28 x 2 cm",
+      "shortDescription": "Tábua de corte com dimensões de 40 x 28 x 2 cm e garantia de 3 meses para auxílio no preparo de alimentos na cozinha.",
+      "longDescription": "A Tábua de Corte possui dimensões de 40 cm de comprimento, 28 cm de largura e 2 cm de espessura, sendo uma opção para o preparo e o corte de diversos tipos de alimentos na cozinha.\n\nO produto conta com 3 meses de garantia oferecidos contra defeitos de fabricação.",
+      "highlights": [
+        "Dimensões de 40 x 28 x 2 cm",
+        "Garantia de 3 meses",
+        "Utensílio para preparo de alimentos"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte 40 x 28 x 2 cm | Utensílio de Cozinha",
+        "metaDescription": "Tábua de corte com dimensões de 40 x 28 x 2 cm e garantia de 3 meses. Confira os detalhes e adquira para sua cozinha.",
+        "keywords": [
+          "tábua de corte",
+          "tábua de cozinha",
+          "tábua 40x28",
+          "utensílios de cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "marrom claro"
+        ],
+        "notes": "Formato retangular com bordas e cantos arredondados com textura e tom de madeira."
+      },
+      "missingInfo": [
+        "Material exato de fabricação",
+        "Peso do produto",
+        "Se pode ir à lava-louças",
+        "Instruções de conservação e higienização",
+        "Marca do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1867,
+      "outputTokens": 445,
+      "thoughtTokens": 1631
+    },
+    "latencyMs": 11394,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00918525
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita com 3 Compartimentos Empilháveis 1,2L",
+      "shortDescription": "Prática marmita com 3 compartimentos empilháveis e capacidade total de 1,2L. Livre de BPA e compatível com micro-ondas.",
+      "longDescription": "Organize suas refeições diárias com praticidade e estilo usando esta marmita com 3 compartimentos empilháveis. Com capacidade total de 1,2 litros, ela permite separar diferentes tipos de alimentos, como acompanhamentos, saladas e prato principal, evitando que os sabores e texturas se misturem ao longo do dia.\n\nDesenvolvida para facilitar a sua rotina no trabalho, faculdade ou passeios, a estrutura conta com uma alça superior que mantém os recipientes firmemente unidos para um transporte seguro. O material é totalmente livre de BPA, garantindo segurança para a sua saúde, e os recipientes podem ser aquecidos no micro-ondas sem a tampa, proporcionando refeições quentes a qualquer momento.",
+      "highlights": [
+        "3 compartimentos empilháveis para separar os alimentos",
+        "Capacidade total de 1,2 litros",
+        "Livre de BPA para maior segurança alimentar",
+        "Pode ser levada ao micro-ondas (sem a tampa)",
+        "Alça superior integrada para transporte prático"
+      ],
+      "seo": {
+        "metaTitle": "Marmita 3 Compartimentos Empilhável 1,2L | R$ 49,90",
+        "metaDescription": "Leve suas refeições com praticidade na marmita de 3 compartimentos e 1,2L. Livre de BPA e pronta para o micro-ondas. Garanta a sua!",
+        "keywords": [
+          "marmita empilhável",
+          "marmita 3 compartimentos",
+          "porta marmita",
+          "marmita 1.2L",
+          "marmita para micro-ondas",
+          "pote marmita com alça"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prateado"
+        ],
+        "notes": "Estrutura cilíndrica com acabamento metálico prateado e suporte externo com alça de fixação."
+      },
+      "missingInfo": [
+        "Material exato de fabricação (aço inox ou plástico aluminizado/térmico)",
+        "Dimensões exatas (altura e diâmetro)",
+        "Se os compartimentos possuem vedação hermética contra vazamentos de líquidos",
+        "Pode ir à lava-louças"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1180,
+      "outputTokens": 597,
+      "thoughtTokens": 1160
+    },
+    "latencyMs": 11073,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": false
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00747375
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita com 3 Compartimentos 1,2 L",
+      "shortDescription": "Marmita com 3 compartimentos e capacidade de 1,2 L. Livre de BPA e liberada para uso em micro-ondas sem a tampa.",
+      "longDescription": "A marmita com compartimentos possui capacidade total de 1,2 litro dividida em 3 compartimentos para organização das suas refeições.\n\nO produto é livre de BPA e pode ser utilizado no micro-ondas para aquecimento do alimento, desde que esteja sem a tampa.",
+      "highlights": [
+        "Capacidade total de 1,2 L",
+        "3 compartimentos de armazenamento",
+        "Livre de BPA",
+        "Pode ir ao micro-ondas sem a tampa"
+      ],
+      "seo": {
+        "metaTitle": "Marmita com 3 Compartimentos 1,2 L",
+        "metaDescription": "Marmita de 1,2 L com 3 compartimentos. Livre de BPA e apta para micro-ondas sem a tampa. Praticidade no transporte de alimentos.",
+        "keywords": [
+          "marmita",
+          "marmita 3 compartimentos",
+          "marmita 1,2 l",
+          "porta marmita",
+          "armazenamento de refeicao"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "prateado"
+        ],
+        "notes": "O produto apresenta formato cilíndrico empilhável com acabamento prateado brilhante e suporte vertical com alça superior para transporte."
+      },
+      "missingInfo": [
+        "Material de fabricação (ex.: aço inoxidável, alumínio ou outro)",
+        "Dimensões do produto (altura, largura e diâmetro)",
+        "Peso do produto",
+        "Informação de garantia",
+        "Marca do produto",
+        "Compatibilidade com lava-louças",
+        "Informação sobre vedação hermética contra vazamentos"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1433,
+      "outputTokens": 466,
+      "thoughtTokens": 1650
+    },
+    "latencyMs": 12793,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00900975
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita com 3 Compartimentos 1,2 L Livre de BPA",
+      "shortDescription": "Marmita com 3 compartimentos e capacidade total de 1,2 L. Livre de BPA e compatível com micro-ondas sem a tampa.",
+      "longDescription": "A Marmita com Compartimentos possui capacidade total de 1,2 L distribuída em 3 compartimentos. O produto é livre de BPA, garantindo um armazenamento adequado para a rotina de refeições.\n\nPode ser utilizada no micro-ondas para aquecer os alimentos, desde que a tampa seja removida antes do uso. Sua estrutura empilhável conta com suporte e alça superior que auxiliam no transporte dos recipientes.",
+      "highlights": [
+        "Capacidade total de 1,2 L",
+        "3 compartimentos empilháveis",
+        "Livre de BPA",
+        "Pode ir ao micro-ondas (sem a tampa)"
+      ],
+      "seo": {
+        "metaTitle": "Marmita com 3 Compartimentos 1,2 L | Livre de BPA",
+        "metaDescription": "Marmita com 3 compartimentos e 1,2 L de capacidade total. Livre de BPA e apta para micro-ondas sem a tampa. Confira os detalhes!",
+        "keywords": [
+          "marmita",
+          "marmita 3 compartimentos",
+          "marmita 1.2l",
+          "pote para marmita",
+          "marmita livre de bpa"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "prata"
+        ],
+        "notes": "Formato cilíndrico prateado com trava de fixação e alça superior para transporte."
+      },
+      "missingInfo": [
+        "Material exato do produto",
+        "Dimensões e peso",
+        "Manutenção da temperatura (se é térmica)",
+        "Se pode ir à lava-louças ou ao freezer",
+        "Garantia e marca do fabricante"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1866,
+      "outputTokens": 473,
+      "thoughtTokens": 1472
+    },
+    "latencyMs": 14325,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00869325
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu 30cm para Cozinha",
+      "shortDescription": "Espátula de bambu de 30cm, resistente e ecológica, ideal para preparar refeições sem riscar suas panelas antiaderentes.",
+      "longDescription": "A Espátula de Bambu de 30cm é o utensílio indispensável para quem busca praticidade e sustentabilidade na cozinha. Desenvolvida em material de alta qualidade, ela oferece a durabilidade necessária para o uso diário, sendo a escolha perfeita para refogar, mexer e servir os mais variados pratos com total segurança e precisão.\n\nSua estrutura foi pensada para preservar a integridade dos seus utensílios, sendo totalmente compatível com panelas antiaderentes. Com um design ergonômico e acabamento impecável, esta espátula proporciona conforto durante o preparo, além de adicionar um toque rústico e sofisticado à decoração do seu ambiente culinário.",
+      "highlights": [
+        "Material ecológico e sustentável",
+        "Não risca superfícies antiaderentes",
+        "Design ergonômico com 30cm de comprimento",
+        "Furo no cabo para pendurar e organizar",
+        "Leve, resistente e de fácil limpeza"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30cm | Utensílio Ecológico para Cozinha",
+        "metaDescription": "Espátula de bambu de 30cm, ideal para panelas antiaderentes. Utensílio de cozinha ecológico, resistente e durável. Garanta já a sua!",
+        "keywords": [
+          "espátula de bambu",
+          "utensílios de cozinha",
+          "espátula para antiaderente",
+          "utensílio ecológico",
+          "utensílio de madeira",
+          "espátula de bambu 30cm",
+          "cozinha sustentável"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Bege natural",
+          "Tom amadeirado"
+        ],
+        "notes": "A foto evidencia os veios naturais do bambu e a presença de um furo passante na extremidade do cabo para facilitar o armazenamento."
+      },
+      "missingInfo": [
+        "Espessura exata da espátula",
+        "Tipo de tratamento aplicado na madeira",
+        "Indicação se pode ir à lava-louças",
+        "Peso do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1183,
+      "outputTokens": 576,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3596,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00115975
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu 30 cm",
+      "shortDescription": "Espátula de cozinha feita em bambu com 30 cm de comprimento. Ideal para uso em panelas antiaderentes.",
+      "longDescription": "A Espátula de Bambu possui 30 cm de comprimento, sendo um utensílio prático para o dia a dia na cozinha. É produzida em bambu, material que permite o uso seguro em panelas com revestimento antiaderente, ajudando a preservar a durabilidade do seu conjunto de panelas.\n\nO cabo possui um orifício na extremidade, facilitando o armazenamento ao permitir que seja pendurada em ganchos ou suportes de utensílios.",
+      "highlights": [
+        "Comprimento de 30 cm",
+        "Material em bambu",
+        "Compatível com panelas antiaderentes",
+        "Possui furo para pendurar"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30 cm para Cozinha | Utensílios",
+        "metaDescription": "Espátula de bambu com 30 cm de comprimento. Ideal para usar em panelas antiaderentes sem riscar. Confira agora mesmo.",
+        "keywords": [
+          "espátula de bambu",
+          "espátula para cozinha",
+          "utensílios de bambu",
+          "espátula para panela antiaderente"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "bege"
+        ],
+        "notes": "A espátula apresenta um formato reto com ponta levemente chanfrada e um orifício circular no topo do cabo."
+      },
+      "missingInfo": [
+        "Largura da ponta da espátula",
+        "Instruções de limpeza ou se pode ir à lava-louças",
+        "Resistência à temperatura"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1869,
+      "outputTokens": 439,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 18964,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00112575
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W com 3 Velocidades e Pulsar",
+      "shortDescription": "Potência e praticidade na sua cozinha com este liquidificador de 600W, capacidade de 1,5L e 5 anos de garantia para maior tranquilidade.",
+      "longDescription": "O Liquidificador Compacto é a solução ideal para quem busca eficiência e durabilidade na rotina diária da cozinha. Com 600W de potência, ele oferece o desempenho necessário para preparar sucos, vitaminas, molhos e massas leves com total facilidade, garantindo resultados homogêneos em poucos instantes.\n\nSeu design funcional conta com um copo resistente de 1,5 litros, perfeito para o preparo de receitas para toda a família. Além disso, as três opções de velocidade combinadas com a função pulsar permitem que você tenha controle total sobre a textura das suas misturas, adaptando o aparelho a diferentes tipos de ingredientes.",
+      "highlights": [
+        "Potência de 600W para misturas rápidas",
+        "Copo espaçoso de 1,5 litros",
+        "Controle preciso com 3 velocidades + pulsar",
+        "Garantia estendida de 5 anos",
+        "Design compacto que otimiza o espaço"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L - 3 Velocidades",
+        "metaDescription": "Compre o Liquidificador Compacto 600W com 1,5L, 3 velocidades e função pulsar. Alta performance com 5 anos de garantia. Confira!",
+        "keywords": [
+          "liquidificador",
+          "eletroportáteis",
+          "liquidificador 600w",
+          "liquidificador 1,5 litros",
+          "cozinha",
+          "liquidificador potente"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prata",
+          "Cinza Escuro",
+          "Azul"
+        ],
+        "notes": "O painel frontal apresenta um seletor giratório com detalhes em azul, conferindo um toque moderno e intuitivo ao aparelho."
+      },
+      "missingInfo": [
+        "Material do copo (plástico ou vidro)",
+        "Quantidade de lâminas",
+        "Material das lâminas (aço inox ou outro)",
+        "Possui filtro ou tampa dosadora?",
+        "Dimensões do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1196,
+      "outputTokens": 571,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4058,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0011555
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W 1,5L 127V",
+      "shortDescription": "Liquidificador com 600W de potência, copo de 1,5 litro e 3 velocidades mais função pulsar. Equipamento prático para o preparo de diversas receitas.",
+      "longDescription": "O liquidificador compacto oferece 600W de potência para auxiliar nas tarefas diárias da cozinha. Com capacidade de 1,5 litro, o copo é ideal para preparar sucos, vitaminas e massas com praticidade.\n\nO aparelho dispõe de 3 velocidades ajustáveis e função pulsar para maior controle durante o uso. Este modelo opera em 127V e conta com garantia de 5 anos, oferecendo suporte prolongado após a compra.",
+      "highlights": [
+        "Potência de 600W",
+        "Capacidade total de 1,5 litro",
+        "3 velocidades com função pulsar",
+        "Garantia de 5 anos",
+        "Voltagem de 127V"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L 127V",
+        "metaDescription": "Liquidificador com 600W de potência, copo de 1,5L, 3 velocidades e função pulsar. Confira a garantia de 5 anos e garanta o seu.",
+        "keywords": [
+          "liquidificador",
+          "eletroportáteis",
+          "cozinha",
+          "liquidificador 600w",
+          "liquidificador 1,5 litros"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prata",
+          "Cinza escuro",
+          "Azul"
+        ],
+        "notes": "O aparelho apresenta base em tom prata, copo transparente com tampa e detalhes em cinza escuro, além de um botão seletor de velocidades na cor azul."
+      },
+      "missingInfo": [
+        "Material do copo (vidro ou plástico)",
+        "Quantidade e material das lâminas",
+        "Presença de filtro",
+        "Dimensões do produto (altura, largura e profundidade)",
+        "Peso do produto",
+        "Comprimento do cabo de alimentação",
+        "Marca do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1449,
+      "outputTokens": 544,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3505,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00117825
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte Retangular com Cantos Arredondados 40x28cm",
+      "shortDescription": "Eleve o estilo da sua cozinha com esta tábua versátil, perfeita para preparar alimentos ou servir petiscos com elegância e praticidade.",
+      "longDescription": "Aprimore a sua experiência na cozinha com esta tábua de corte de design contemporâneo. Com dimensões generosas de 40x28cm, ela oferece espaço de sobra para o manuseio de diversos alimentos, desde carnes e vegetais até a montagem de tábuas de frios sofisticadas. Seus cantos arredondados conferem um visual moderno e refinado, tornando-a uma peça que transita facilmente da bancada para a mesa na hora de servir seus convidados. Desenvolvida para ser um item essencial no dia a dia, sua estrutura robusta com 2cm de espessura garante estabilidade durante o uso, proporcionando segurança e durabilidade. Seja para o preparo de receitas especiais ou para receber amigos com bom gosto, este acessório une funcionalidade e estética para compor um ambiente acolhedor e organizado.",
+      "highlights": [
+        "Design moderno com cantos arredondados",
+        "Dimensões amplas de 40x28cm para facilitar o corte",
+        "Versátil: ideal para preparar ou servir alimentos",
+        "Estrutura firme com 2cm de espessura"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte em Madeira 40x28cm - Utensílios de Cozinha",
+        "metaDescription": "Compre tábua de corte retangular, 40x28cm, com cantos arredondados. Ideal para servir e preparar alimentos com praticidade e design elegante.",
+        "keywords": [
+          "tábua de corte",
+          "tábua de madeira",
+          "utensílios de cozinha",
+          "tábua de servir",
+          "acessórios de cozinha",
+          "preparo de alimentos"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Marrom claro",
+          "Natural"
+        ],
+        "notes": "A imagem apresenta um acabamento que simula madeira natural com veios aparentes e bordas ligeiramente elevadas."
+      },
+      "missingInfo": [
+        "Tipo exato do material (madeira, bambu ou polímero)",
+        "Indicação de resistência a umidade e necessidade de tratamento com óleo",
+        "Se a peça possui base antiderrapante",
+        "Instruções específicas de limpeza e manutenção"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1181,
+      "outputTokens": 607,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3981,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "madeira"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00120575
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte Retangular 40x28cm",
+      "shortDescription": "Tábua de corte com formato retangular e cantos arredondados, medindo 40x28x2 cm, ideal para o preparo de alimentos na cozinha.",
+      "longDescription": "A tábua de corte possui formato retangular com bordas arredondadas, oferecendo uma superfície plana de 40 por 28 centímetros. Com 2 centímetros de espessura, é uma peça prática para auxiliar no preparo diário de alimentos em sua cozinha.\n\nO produto conta com garantia de 3 meses contra defeitos de fabricação. Por favor, verifique se as medidas atendem às suas necessidades de espaço para corte antes de finalizar o pedido.",
+      "highlights": [
+        "Dimensões: 40 x 28 x 2 cm",
+        "Formato retangular com cantos arredondados",
+        "Garantia de 3 meses"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte Retangular 40x28cm | Utensílios de Cozinha",
+        "metaDescription": "Tábua de corte retangular de 40x28 cm. Garanta praticidade no preparo dos seus alimentos. Confira as especificações e garanta a sua.",
+        "keywords": [
+          "tábua de corte",
+          "utensílios de cozinha",
+          "tábua de alimentos",
+          "preparo de comida",
+          "cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "madeira natural"
+        ],
+        "notes": "A foto mostra uma peça de tom amadeirado com acabamento liso e bordas suavemente arredondadas."
+      },
+      "missingInfo": [
+        "Material de fabricação do produto",
+        "Instruções de limpeza e manutenção",
+        "Informações sobre tratamento atóxico da superfície"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1434,
+      "outputTokens": 464,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 6130,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0010545
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "tabua-de-corte",
+    "copy": {
+      "title": "Tábua de Corte 40 x 28 x 2 cm",
+      "shortDescription": "Tábua de corte com dimensões de 40 x 28 x 2 cm, ideal para o preparo de alimentos na cozinha.",
+      "longDescription": "A Tábua de Corte possui 40 cm de comprimento, 28 cm de largura e 2 cm de espessura. É um utensílio versátil para o dia a dia na cozinha no preparo de diversos tipos de alimentos.\n\nO produto conta com garantia de 3 meses contra defeitos de fabricação.",
+      "highlights": [
+        "Dimensões de 40 x 28 x 2 cm",
+        "Garantia de 3 meses",
+        "Utensílio para preparo de alimentos"
+      ],
+      "seo": {
+        "metaTitle": "Tábua de Corte 40 x 28 x 2 cm | Utensílio de Cozinha",
+        "metaDescription": "Tábua de corte com 40 x 28 x 2 cm. Prática para o preparo de alimentos. Confira as medidas e garantia.",
+        "keywords": [
+          "tábua de corte",
+          "tábua de cozinha",
+          "utensílios de cozinha",
+          "tábua de madeira"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "madeira natural"
+        ],
+        "notes": "A peça possui formato retangular com bordas arredondadas em uma das extremidades."
+      },
+      "missingInfo": [
+        "Material de fabricação",
+        "Marca do produto",
+        "Instruções de limpeza e conservação",
+        "Se pode entrar em contato direto com alimentos úmidos"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1867,
+      "outputTokens": 420,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4257,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00109675
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita Inox com 3 Compartimentos e Alça - 1,2 Litros",
+      "shortDescription": "Prática marmita em aço inox com 3 níveis de armazenamento e design compacto, ideal para manter suas refeições organizadas e seguras no dia a dia.",
+      "longDescription": "Leve praticidade e estilo para a sua rotina com esta marmita de três compartimentos. Desenvolvida em aço inox de alta qualidade, ela oferece uma solução durável e higiênica para transportar suas refeições completas, permitindo separar diferentes tipos de alimentos sem que eles se misturem. Seu design vertical otimiza o espaço na bolsa e garante uma vedação segura para o transporte diário.\n\nAlém da durabilidade, esta marmita é pensada na sua saúde e conveniência. O material é livre de BPA, garantindo que nenhum químico nocivo passe para a sua comida. Com capacidade total de 1,2 litros, é o tamanho ideal para porções individuais generosas. Para maior versatilidade, você pode aquecer suas refeições diretamente no micro-ondas, bastando apenas remover a tampa, tornando-a a parceira perfeita para o escritório, escola ou viagens.",
+      "highlights": [
+        "3 compartimentos empilháveis para separar os alimentos",
+        "Material em aço inox resistente e livre de BPA",
+        "Capacidade total de 1,2 litros",
+        "Compatível com micro-ondas (sem a tampa)",
+        "Design compacto com alça de transporte prática"
+      ],
+      "seo": {
+        "metaTitle": "Marmita Inox 3 Compartimentos 1,2L - Prática e Segura",
+        "metaDescription": "Organize suas refeições com nossa marmita de 3 compartimentos em aço inox. Compacta, livre de BPA e vai ao micro-ondas. Confira!",
+        "keywords": [
+          "marmita inox",
+          "pote de comida",
+          "marmita com divisórias",
+          "lancheira térmica",
+          "recipiente para alimentos",
+          "marmita 3 andares",
+          "porta comida"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prata"
+        ],
+        "notes": "A imagem destaca o acabamento metálico polido e o sistema de travas laterais que mantém os três compartimentos unidos de forma firme e segura."
+      },
+      "missingInfo": [
+        "É à prova de vazamentos para caldos e molhos?",
+        "Pode ser levada ao freezer?",
+        "Pode ser lavada na máquina de lavar louças?",
+        "Qual a altura total do conjunto montado?",
+        "Qual o tipo de vedação interna (possui borracha de silicone?)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1180,
+      "outputTokens": 633,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4431,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "aço, inox"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0012445
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita com 3 Compartimentos 1,2 Litros",
+      "shortDescription": "Organize suas refeições com esta marmita prática de 3 compartimentos. Com capacidade total de 1,2 litros, é livre de BPA e pode ser levada ao micro-ondas.",
+      "longDescription": "A marmita com 3 compartimentos é a solução ideal para quem busca praticidade no dia a dia. Com capacidade total de 1,2 litros, permite organizar diferentes tipos de alimentos em um único recipiente, facilitando o transporte das suas refeições para o trabalho ou estudo.\n\nO produto é livre de BPA e pode ser utilizado no micro-ondas, garantindo segurança e versatilidade na hora de aquecer seus alimentos. Para realizar o aquecimento, basta retirar a tampa do recipiente.",
+      "highlights": [
+        "Capacidade total de 1,2 litros",
+        "Possui 3 compartimentos internos",
+        "Produto livre de BPA",
+        "Compatível com micro-ondas (sem a tampa)"
+      ],
+      "seo": {
+        "metaTitle": "Marmita com 3 Compartimentos 1,2L | Prática e Segura",
+        "metaDescription": "Marmita com 3 compartimentos e capacidade de 1,2 litros. Livre de BPA e compatível com micro-ondas. Confira!",
+        "keywords": [
+          "marmita",
+          "pote para comida",
+          "marmita com divisórias",
+          "recipiente para alimentos",
+          "marmita 1,2 litros"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Prateado"
+        ],
+        "notes": "O produto possui formato cilíndrico com empilhamento de compartimentos e alça metálica para transporte."
+      },
+      "missingInfo": [
+        "Material do produto",
+        "Dimensões exatas (altura, largura e profundidade)",
+        "Peso do produto",
+        "Informações sobre vedação térmica ou hermética",
+        "Compatibilidade com lava-louças",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1433,
+      "outputTokens": 490,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3832,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00109325
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "marmita-compartimentos",
+    "copy": {
+      "title": "Marmita com 3 Compartimentos 1,2 Litros",
+      "shortDescription": "Marmita de 1,2 litro com três compartimentos independentes. Livre de BPA e compatível com micro-ondas sem a tampa.",
+      "longDescription": "Organize suas refeições com a praticidade da Marmita com Compartimentos. Com capacidade total de 1,2 litro, ela é composta por três compartimentos que permitem separar diferentes tipos de alimentos em uma única peça.\n\nO produto é livre de BPA, garantindo mais segurança para o seu dia a dia. Para maior comodidade, a marmita pode ser utilizada no micro-ondas, bastando retirar a tampa antes do aquecimento.",
+      "highlights": [
+        "Capacidade total de 1,2 litro",
+        "Divisão em 3 compartimentos",
+        "Livre de BPA",
+        "Pode ir ao micro-ondas (sem tampa)"
+      ],
+      "seo": {
+        "metaTitle": "Marmita com 3 Compartimentos 1,2 Litros | Prática e Segura",
+        "metaDescription": "Marmita com 3 compartimentos e 1,2 litro de capacidade total. Livre de BPA e própria para micro-ondas. Confira!",
+        "keywords": [
+          "marmita",
+          "marmita com divisórias",
+          "marmita para micro-ondas",
+          "pote de comida",
+          "marmita 1,2 litro"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "prata"
+        ],
+        "notes": "A marmita possui formato cilíndrico, acabamento metálico brilhante e uma alça superior metálica acoplada à estrutura."
+      },
+      "missingInfo": [
+        "Material de fabricação",
+        "Dimensões externas",
+        "Se é hermética ou à prova de vazamentos",
+        "Se pode ir à lava-louças",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1866,
+      "outputTokens": 459,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 22166,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.001155
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Off-White Esportivo Branco e Vermelho",
+      "shortDescription": "Eleve seu estilo urbano com o Tênis Off-White, unindo design icônico, conforto premium e a durabilidade necessária para o seu dia a dia.",
+      "longDescription": "O Tênis Off-White combina perfeitamente a estética streetwear contemporânea com a funcionalidade que você precisa. Com um design arrojado que destaca o icônico logo de seta lateral em um contraste vibrante de vermelho sobre o cabedal branco, este modelo é a escolha ideal para quem não abre mão de autenticidade e presença em qualquer ocasião.",
+      "highlights": [
+        "Design icônico com logo lateral exclusivo",
+        "Cabedal sintético resistente de alta durabilidade",
+        "Solado de borracha para maior aderência",
+        "Estilo versátil para compor looks casuais ou esportivos"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Off-White Branco e Vermelho | Estilo e Conforto",
+        "metaDescription": "Compre o Tênis Off-White Branco e Vermelho. Design exclusivo, alta durabilidade e estilo urbano para o seu dia a dia. Garanta o seu do 38 ao 44!",
+        "keywords": [
+          "Tênis Off-White",
+          "Tênis masculino",
+          "Tênis branco e vermelho",
+          "Moda urbana",
+          "Streetwear",
+          "Tênis de marca"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Vermelho"
+        ],
+        "notes": "O modelo apresenta um solado com texturas diferenciadas e acabamento clean que reforça a identidade premium da marca."
+      },
+      "missingInfo": [
+        "Tipo de fechamento (cadarço ou elástico)",
+        "Presença de amortecimento interno ou tecnologia de palmilha",
+        "Guia de tamanhos em centímetros",
+        "Origem e detalhes sobre a procedência do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1174,
+      "outputTokens": 475,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 2982,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.001006
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Esportivo Off White Branco e Vermelho",
+      "shortDescription": "Tênis esportivo com cabedal sintético e solado de borracha. Disponível nos tamanhos 38 ao 44 para compor seu estilo no dia a dia.",
+      "longDescription": "O tênis esportivo da Off White traz um design moderno com a combinação das cores branco e vermelho. É uma opção versátil para quem busca um calçado com linhas marcantes para o cotidiano.\n\nO modelo conta com cabedal confeccionado em material sintético e solado em borracha, oferecendo acabamento firme e resistente. A grade de numeração disponível atende do tamanho 38 ao 44.",
+      "highlights": [
+        "Design esportivo com detalhes em vermelho",
+        "Cabedal fabricado em material sintético",
+        "Solado resistente em borracha",
+        "Grade de numeração do 38 ao 44"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Esportivo Off White Branco e Vermelho | Loja Online",
+        "metaDescription": "Compre o Tênis Esportivo Off White Branco e Vermelho. Disponível nos tamanhos 38 ao 44. Confira as especificações e garanta o seu.",
+        "keywords": [
+          "tenis off white",
+          "tenis esportivo",
+          "tenis masculino",
+          "tenis branco e vermelho",
+          "calcado casual"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branco",
+          "vermelho"
+        ],
+        "notes": "O calçado apresenta um design de cano baixo com destaque para o símbolo de seta lateral em cor vermelha."
+      },
+      "missingInfo": [
+        "Tipo de fechamento (cadarço ou outro)",
+        "Peso do produto",
+        "Origem do produto",
+        "Garantia contra defeitos de fabricação",
+        "Tipo de palmilha ou forro interno"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1427,
+      "outputTokens": 471,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3105,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00106325
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Off White Esportivo Branco e Vermelho",
+      "shortDescription": "Tênis esportivo Off White nas cores branco e vermelho. Disponível do 38 ao 44, com cabedal sintético e solado de borracha para maior aderência.",
+      "longDescription": "O Tênis Esportivo Off White combina estilo e praticidade para o uso diário. Com design moderno nas cores branco e vermelho, ele possui cabedal confeccionado em material sintético e solado em borracha resistente.\n\nO modelo oferece opções de numeração que vão do 38 ao 44, garantindo um ajuste preciso para diferentes tamanhos. É a escolha ideal para quem busca um calçado versátil com o design característico da marca.",
+      "highlights": [
+        "Design nas cores branco e vermelho",
+        "Cabedal em material sintético",
+        "Solado de borracha resistente",
+        "Numeração disponível do 38 ao 44"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Off White Branco e Vermelho | Moda Masculina",
+        "metaDescription": "Tênis esportivo Off White branco e vermelho. Cabedal sintético e solado de borracha. Confira numerações do 38 ao 44 disponíveis.",
+        "keywords": [
+          "tênis off white",
+          "tênis masculino",
+          "tênis branco e vermelho",
+          "calçado esportivo",
+          "tênis off white original"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branco",
+          "vermelho"
+        ],
+        "notes": "O tênis apresenta um detalhe lateral em formato de seta na cor vermelha e solado com partes em tom translúcido."
+      },
+      "missingInfo": [
+        "Tipo de fechamento",
+        "Peso do calçado",
+        "Indicado para prática esportiva específica ou casual",
+        "Garantia",
+        "Origem do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 3763,
+      "outputTokens": 905,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 15901,
+    "attempts": 2,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00229825
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Classic Wear Algodão",
+      "shortDescription": "Eleve seu estilo casual com a Camisa Xadrez Classic Wear. Confeccionada em 100% algodão, oferece conforto, durabilidade e um ajuste perfeito ao corpo.",
+      "longDescription": "A Camisa Xadrez Masculina da Classic Wear é a escolha definitiva para quem não abre mão de um visual autêntico e versátil. Com seu design atemporal de estampa xadrez em tons contrastantes, ela se adapta facilmente tanto a composições urbanas com jeans quanto a looks mais despojados para os finais de semana. Sua modelagem regular garante liberdade de movimento e um caimento impecável para todos os biotipos.\n\nProduzida inteiramente em algodão de alta qualidade, esta peça proporciona um toque suave à pele e excelente respirabilidade, sendo ideal para uso prolongado em diferentes estações. Seja usada abotoada para um visual mais alinhado ou aberta sobre uma camiseta básica, esta camisa é um item indispensável que traz personalidade imediata ao seu guarda-roupa masculino.",
+      "highlights": [
+        "Confeccionada em 100% algodão de alta qualidade",
+        "Modelagem regular com ajuste confortável",
+        "Estampa xadrez clássica e versátil",
+        "Manga longa ideal para meia-estação",
+        "Design atemporal da marca Classic Wear"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina Classic Wear 100% Algodão",
+        "metaDescription": "Compre Camisa Xadrez Masculina Classic Wear 100% algodão. Estilo, conforto e durabilidade em uma peça indispensável. Confira nossos tamanhos disponíveis!",
+        "keywords": [
+          "camisa xadrez masculina",
+          "camisa xadrez algodão",
+          "moda masculina",
+          "camisa classic wear",
+          "camisa manga longa xadrez",
+          "roupa casual masculina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Vermelho",
+          "Preto"
+        ],
+        "notes": "A camisa possui uma padronagem xadrez de quadrados médios com botões frontais aparentes que seguem o tom da costura."
+      },
+      "missingInfo": [
+        "Tabela de medidas com largura de tórax e comprimento das mangas",
+        "Tipo de lavagem recomendada (se pode ir à secadora)",
+        "Informações sobre a espessura do tecido (flanela ou algodão fino)",
+        "Tipo de fechamento dos punhos (botão simples ou duplo)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1181,
+      "outputTokens": 612,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4575,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00121325
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Classic Wear",
+      "shortDescription": "Camisa masculina de manga longa com estampa xadrez, modelagem regular e fabricada em 100% algodão.",
+      "longDescription": "A camisa xadrez Classic Wear oferece um design clássico com modelagem regular, garantindo conforto para o dia a dia. Confeccionada em 100% algodão, proporciona um toque suave e respirável para diversas ocasiões.\n\nEsta peça de manga longa conta com fechamento frontal por botões, mantendo o estilo tradicional da estampa xadrez. Disponível nos tamanhos P, M, G e GG para atender a diferentes tipos de corpo.",
+      "highlights": [
+        "Confeccionada em 100% algodão",
+        "Modelagem regular",
+        "Manga longa",
+        "Estampa xadrez clássica",
+        "Disponível nos tamanhos P a GG"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina Classic Wear - 100% Algodão",
+        "metaDescription": "Camisa xadrez masculina Classic Wear de manga longa em 100% algodão. Modelagem regular, disponível do P ao GG. Confira os detalhes.",
+        "keywords": [
+          "camisa xadrez",
+          "camisa masculina",
+          "camisa 100% algodão",
+          "classic wear",
+          "moda masculina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Vermelho",
+          "Preto"
+        ],
+        "notes": "A camisa possui estampa xadrez nas cores vermelha e preta com botões claros."
+      },
+      "missingInfo": [
+        "Tabela de medidas (comprimento, largura, tórax)",
+        "Instruções de lavagem e conservação"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1434,
+      "outputTokens": 447,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4618,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.001029
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Classic Wear",
+      "shortDescription": "Camisa xadrez masculina Classic Wear de manga longa, confeccionada em 100% algodão e com modelagem regular.",
+      "longDescription": "A Camisa Xadrez Masculina da Classic Wear apresenta estampa clássica e é produzida em 100% algodão, garantindo conforto para o uso diário. Com mangas longas e modelagem regular, é uma peça versátil para diversas ocasiões.\n\nA peça conta com fechamento frontal por botões, oferecendo um ajuste tradicional e prático para o seu guarda-roupa.",
+      "highlights": [
+        "100% algodão",
+        "Modelagem regular",
+        "Manga longa",
+        "Marca: Classic Wear"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina Classic Wear | 100% Algodão",
+        "metaDescription": "Camisa xadrez masculina manga longa da marca Classic Wear. Confeccionada em 100% algodão com modelagem regular. Confira os tamanhos disponíveis.",
+        "keywords": [
+          "camisa xadrez",
+          "camisa masculina",
+          "camisa 100% algodão",
+          "camisa manga longa",
+          "moda masculina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto"
+        ],
+        "notes": "A camisa possui estampa de xadrez em blocos e botões frontais claros."
+      },
+      "missingInfo": [
+        "Instruções de lavagem e conservação",
+        "Tabela de medidas",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1867,
+      "outputTokens": 414,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 2657,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00108775
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Luminária de Mesa Temática Tropical com Macacos",
+      "shortDescription": "Ilumine seu ambiente com um toque de diversão e exotismo com esta luminária exclusiva de design tropical, ideal para decorações temáticas e criativas.",
+      "longDescription": "Transforme a decoração da sua casa com esta luminária de mesa única, que traz o frescor do clima tropical diretamente para o seu ambiente. Com um design rico em detalhes, a peça conta com uma base decorada por simpáticos macacos e um suporte que simula um cacho de bananas, criando um visual lúdico e sofisticado que se destaca em qualquer cômodo, seja na sala, no quarto ou em um escritório criativo.",
+      "highlights": [
+        "Design exclusivo com temática tropical",
+        "Base ricamente detalhada com figuras de macacos",
+        "Estrutura bivolt para maior versatilidade",
+        "Soquete padrão E27 compatível com diversas lâmpadas"
+      ],
+      "seo": {
+        "metaTitle": "Luminária de Mesa Tropical Decorativa - R$ 219,90",
+        "metaDescription": "Dê um toque divertido à sua decoração com nossa luminária de mesa temática. Design exclusivo, bivolt e perfeita para ambientes criativos.",
+        "keywords": [
+          "luminária de mesa",
+          "abajur tropical",
+          "decoração criativa",
+          "luminária decorativa",
+          "iluminação temática",
+          "abajur de luxo"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Bege",
+          "Verde Musgo",
+          "Marrom"
+        ],
+        "notes": "A cúpula possui um acabamento que sugere textura sutil, e a base exibe detalhes tridimensionais minuciosamente esculpidos."
+      },
+      "missingInfo": [
+        "Material de fabricação (ex: resina, metal ou plástico)",
+        "Tipo de interruptor (botão, toque ou dimmer)",
+        "Comprimento do cabo de alimentação",
+        "Tipo de lâmpada recomendada (LED, incandescente ou filamento)",
+        "Peso total da peça"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1174,
+      "outputTokens": 508,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4593,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": false
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0010555
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Luminária de Mesa com Base Temática 45cm",
+      "shortDescription": "Luminária de mesa com 45cm de altura, soquete E27 bivolt e design decorativo. Ideal para diversos ambientes.",
+      "longDescription": "Esta luminária de mesa possui 45 cm de altura e conta com soquete padrão E27, sendo compatível com lâmpadas bivolt. O produto é uma peça decorativa funcional para iluminar espaços internos com praticidade.\n\nO modelo não acompanha lâmpada, permitindo que você escolha a intensidade e o tom de luz que melhor atendam à sua necessidade. A instalação é simples e adequada para voltagens bivolt.",
+      "highlights": [
+        "Altura de 45 cm",
+        "Soquete padrão E27",
+        "Funcionamento bivolt",
+        "Design decorativo para mesa"
+      ],
+      "seo": {
+        "metaTitle": "Luminária de Mesa 45cm Bivolt - Iluminação Decorativa",
+        "metaDescription": "Luminária de mesa com 45cm de altura, soquete E27 e funcionamento bivolt. Confira os detalhes e compre a sua.",
+        "keywords": [
+          "luminária de mesa",
+          "luminária bivolt",
+          "iluminação",
+          "luminária decorativa",
+          "abajur"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Marrom",
+          "Verde",
+          "Amarelo"
+        ],
+        "notes": "A base da luminária apresenta detalhes que remetem a troncos de árvore com folhas e figuras esculpidas na parte inferior."
+      },
+      "missingInfo": [
+        "Material de fabricação",
+        "Potência máxima suportada pela luminária",
+        "Comprimento do cabo de energia",
+        "Tipo de interruptor"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1427,
+      "outputTokens": 442,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 5769,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00101975
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Luminária de Mesa Estilo Temático 45 cm",
+      "shortDescription": "Luminária de mesa com 45 cm de altura, soquete E27 e voltagem bivolt. Design decorativo ideal para iluminar seus ambientes.",
+      "longDescription": "A Luminária de Mesa possui 45 cm de altura e conta com soquete E27, sendo compatível com diversos tipos de lâmpadas. O produto possui voltagem bivolt, adaptando-se facilmente à rede elétrica do seu local.\n\nCom um formato diferenciado, a luminária agrega estilo à decoração da mesa de cabeceira, estantes ou mesas de apoio. A peça não acompanha lâmpada, permitindo que você escolha a intensidade e temperatura de cor que melhor atendam à sua necessidade.",
+      "highlights": [
+        "Altura de 45 cm",
+        "Soquete E27",
+        "Voltagem bivolt"
+      ],
+      "seo": {
+        "metaTitle": "Luminária de Mesa Bivolt 45 cm | Soquete E27",
+        "metaDescription": "Luminária de mesa bivolt com 45 cm de altura. Compatível com soquete E27. Ideal para compor sua decoração com estilo. Confira!",
+        "keywords": [
+          "luminária de mesa",
+          "luminária bivolt",
+          "luminária decorativa",
+          "iluminação de mesa",
+          "abajur"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "marrom",
+          "verde",
+          "bege"
+        ],
+        "notes": "A base da luminária apresenta detalhes em relevo que remetem a árvores e elementos tropicais."
+      },
+      "missingInfo": [
+        "Material de fabricação",
+        "Potência máxima suportada pela lâmpada",
+        "Tipo de interruptor",
+        "Comprimento do cabo de energia",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1860,
+      "outputTokens": 463,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3838,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0011595
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso Decorativo Redondo em Polietileno - 20cm",
+      "shortDescription": "Vaso decorativo moderno com design minimalista, perfeito para compor ambientes internos com estilo e elegância. Ideal para plantas de pequeno porte.",
+      "longDescription": "Adicione um toque de modernidade e sofisticação à sua decoração com este vaso de formato arredondado. Seu design clean e acabamento neutro harmonizam facilmente com diversos estilos de interiores, desde o contemporâneo até o industrial, tornando-se uma peça versátil para salas, escritórios ou quartos. É a escolha perfeita para quem busca valorizar o verde em casa com praticidade e estética apurada.\n\nProduzido com materiais de alta qualidade e durabilidade, este vaso oferece excelente resistência para o uso no dia a dia. Com dimensões compactas, ele se adapta perfeitamente a estantes, mesas de centro ou aparadores, garantindo um visual limpo e organizado. Seja para plantas naturais ou arranjos permanentes, este item é o detalhe que faltava para transformar o clima do seu ambiente.",
+      "highlights": [
+        "Design minimalista e elegante",
+        "Acabamento resistente e durável",
+        "Tamanho ideal para decorações de bancada",
+        "Versatilidade para diversos estilos de ambientes"
+      ],
+      "seo": {
+        "metaTitle": "Vaso Decorativo Redondo Minimalista 20cm | Decoração de Casa",
+        "metaDescription": "Transforme sua casa com nosso vaso decorativo moderno. Design clean, durável e perfeito para ambientes internos. Confira e compre agora!",
+        "keywords": [
+          "vaso decorativo",
+          "vaso para plantas",
+          "decoração de interiores",
+          "vaso minimalista",
+          "vaso redondo",
+          "cachepot",
+          "decoração para sala"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Cinza chumbo",
+          "Verde (folhagem)"
+        ],
+        "notes": "O acabamento do vaso possui um aspecto fosco e liso, conferindo um toque de modernidade e neutralidade à peça."
+      },
+      "missingInfo": [
+        "Material de fabricação (polietileno, cerâmica, plástico)",
+        "Peso do produto",
+        "Instruções de limpeza e manutenção",
+        "Origem do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1169,
+      "outputTokens": 549,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 10043,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00111575
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso para Plantas 20 cm",
+      "shortDescription": "Vaso decorativo para plantas com 20 cm de altura e 14 cm de diâmetro. Design minimalista na cor preta, ideal para compor ambientes internos.",
+      "longDescription": "Este vaso para plantas possui um design simples e versátil, adaptando-se facilmente a diferentes estilos de decoração residencial ou comercial. Com 20 cm de altura e 14 cm de diâmetro, é um item funcional para acomodar suas plantas de pequeno porte com praticidade.\n\nO produto apresenta um acabamento na cor preta. É importante observar que este modelo não possui furo de drenagem em sua base, sendo indicado para o uso com cachepôs ou plantas que não necessitem de escoamento direto de água.",
+      "highlights": [
+        "Altura de 20 cm",
+        "Diâmetro de 14 cm",
+        "Cor preta",
+        "Sem furo de drenagem"
+      ],
+      "seo": {
+        "metaTitle": "Vaso para Plantas 20 cm Preto - Decoração",
+        "metaDescription": "Vaso decorativo na cor preta com 20 cm de altura e 14 cm de diâmetro. Ideal para compor ambientes. Confira os detalhes.",
+        "keywords": [
+          "vaso",
+          "vaso de plantas",
+          "decoração",
+          "vaso preto",
+          "vaso decorativo"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "preto",
+          "verde"
+        ],
+        "notes": "A foto exibe um vaso preto contendo uma folhagem verde em seu interior."
+      },
+      "missingInfo": [
+        "Material do vaso",
+        "Marca do fabricante",
+        "Peso do produto",
+        "Capacidade em litros",
+        "Informações sobre garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1422,
+      "outputTokens": 447,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4518,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.001026
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso para Plantas 20 cm",
+      "shortDescription": "Vaso para plantas com 20 cm de altura e 14 cm de diâmetro. Design minimalista, ideal para decoração interna.",
+      "longDescription": "O Vaso para Plantas possui 20 cm de altura e 14 cm de diâmetro, sendo uma peça prática para compor a decoração da sua casa ou escritório. Com formato arredondado, ele traz um acabamento sóbrio que combina com diferentes estilos de ambiente.\n\nEste modelo não possui furo de drenagem, o que o torna indicado para uso em locais onde é necessário evitar o escoamento de água, como mesas ou superfícies delicadas.",
+      "highlights": [
+        "Altura de 20 cm",
+        "Diâmetro de 14 cm",
+        "Design arredondado",
+        "Sem furo de drenagem"
+      ],
+      "seo": {
+        "metaTitle": "Vaso para Plantas 20 cm | Decoração de Interiores",
+        "metaDescription": "Vaso para plantas com 20 cm de altura e 14 cm de diâmetro. Design arredondado, sem furo de drenagem. Ideal para sua decoração.",
+        "keywords": [
+          "vaso para plantas",
+          "vaso decorativo",
+          "vaso 20cm",
+          "decoração de casa",
+          "vaso para interior"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "preto"
+        ],
+        "notes": "O vaso possui acabamento fosco com formato semicircular."
+      },
+      "missingInfo": [
+        "Material do produto",
+        "Peso do produto",
+        "Garantia",
+        "Se acompanha a planta"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1855,
+      "outputTokens": 422,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 10663,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00109675
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "mochila-couro-sintetico-branca",
+    "copy": {
+      "title": "Mochila Feminina Urban Chic em Couro Sintético Branca",
+      "shortDescription": "Eleve seu estilo com a Mochila Feminina Urban Chic. Elegante, compacta e ideal para acompanhar seus compromissos diários com sofisticação.",
+      "longDescription": "A Mochila Feminina Urban Chic une design minimalista e funcionalidade para a mulher contemporânea. Confeccionada em couro sintético de alta qualidade, esta peça oferece um acabamento impecável que combina perfeitamente com looks casuais ou produções mais elaboradas, garantindo um toque de leveza ao seu visual do dia a dia. Com dimensões compactas, ela é o acessório perfeito para levar seus itens essenciais com conforto e segurança sem abrir mão da elegância.\n\nSua estrutura inteligente conta com um compartimento principal espaçoso e um bolso frontal de fácil acesso, ideal para manter seus pertences organizados durante a rotina. Além do design moderno, a mochila foi projetada para oferecer durabilidade, contando com ferragens resistentes e um fechamento prático que facilita o manuseio. É a escolha definitiva para quem busca uma peça versátil, durável e com garantia estendida de dois anos para sua total tranquilidade.",
+      "highlights": [
+        "Design minimalista e sofisticado",
+        "Couro sintético de alta durabilidade",
+        "Ferragens com acabamento premium",
+        "Garantia estendida de 2 anos",
+        "Formato compacto e leve"
+      ],
+      "seo": {
+        "metaTitle": "Mochila Feminina Branca Urban Chic | Elegância e Estilo",
+        "metaDescription": "Compre a Mochila Feminina Branca da Urban Chic. Design moderno, couro sintético de alta qualidade e 2 anos de garantia. Garanta a sua agora!",
+        "keywords": [
+          "mochila feminina",
+          "mochila branca",
+          "bolsa mochila",
+          "acessórios urban chic",
+          "mochila couro sintetico",
+          "moda feminina",
+          "mochila elegante"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Dourado (ferragens)"
+        ],
+        "notes": "A mochila apresenta um design estruturado com tiras decorativas frontais e detalhes metálicos que adicionam um contraste moderno ao material branco."
+      },
+      "missingInfo": [
+        "Tipo de fechamento do compartimento principal (ex: zíper, botão magnético)",
+        "Comprimento e regulagem das alças de ombro",
+        "Peso total da mochila vazia",
+        "Material do forro interno",
+        "Capacidade em litros ou suporte para dispositivos (ex: tablet)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1190,
+      "outputTokens": 626,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 21382,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0012365
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "mochila-couro-sintetico-branca",
+    "copy": {
+      "title": "Mochila Feminina Branca Urban Chic",
+      "shortDescription": "Mochila feminina na cor branca, produzida em couro sintético com 30 x 25 x 12 cm. Possui um compartimento principal e um bolso frontal.",
+      "longDescription": "A mochila feminina Urban Chic na cor branca é uma opção prática para o dia a dia. Com design estruturado, o modelo oferece um compartimento principal espaçoso e um bolso frontal para organizar seus itens essenciais com facilidade.\n\nO produto é confeccionado em couro sintético e possui dimensões de 30 x 25 x 12 cm. A marca oferece uma garantia de 2 anos, assegurando a qualidade e a confiança na fabricação da peça.",
+      "highlights": [
+        "Confeccionada em couro sintético",
+        "Dimensões: 30 x 25 x 12 cm",
+        "Possui um compartimento principal",
+        "Inclui um bolso frontal",
+        "Garantia de 2 anos"
+      ],
+      "seo": {
+        "metaTitle": "Mochila Feminina Branca Urban Chic - Couro Sintético",
+        "metaDescription": "Mochila feminina branca Urban Chic em couro sintético. Dimensões 30x25x12 cm com garantia de 2 anos. Confira os detalhes e compre a sua.",
+        "keywords": [
+          "mochila feminina",
+          "mochila branca",
+          "mochila couro sintetico",
+          "bolsa mochila",
+          "Urban Chic"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Dourado"
+        ],
+        "notes": "A mochila possui detalhes em metal dourado no fechamento frontal e nas ponteiras dos cordões de ajuste."
+      },
+      "missingInfo": [
+        "Tipo de fechamento do compartimento principal",
+        "Capacidade em litros",
+        "Peso do produto",
+        "Comprimento ajustável das alças"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1443,
+      "outputTokens": 479,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3291,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00107925
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "mochila-couro-sintetico-branca",
+    "copy": {
+      "title": "Mochila Feminina Branca Urban Chic",
+      "shortDescription": "Mochila feminina Urban Chic feita em couro sintético, com dimensões de 30 x 25 x 12 cm, um compartimento principal e um bolso frontal.",
+      "longDescription": "A Mochila Feminina Branca da marca Urban Chic é uma opção prática para o dia a dia, medindo 30 x 25 x 12 cm. O modelo é confeccionado em couro sintético e oferece um design versátil para compor diferentes visuais.\n\nPara a organização dos seus itens, a mochila conta com um compartimento principal amplo e um bolso frontal adicional. O produto possui garantia de 2 anos, assegurando a qualidade e o suporte da marca.",
+      "highlights": [
+        "Fabricada em couro sintético",
+        "Dimensões de 30 x 25 x 12 cm",
+        "Um compartimento principal e um bolso frontal",
+        "Garantia de 2 anos"
+      ],
+      "seo": {
+        "metaTitle": "Mochila Feminina Branca Urban Chic | Couro Sintético",
+        "metaDescription": "Mochila feminina branca Urban Chic em couro sintético. Possui 30x25x12 cm, um compartimento principal e bolso frontal. Confira!",
+        "keywords": [
+          "mochila feminina",
+          "mochila branca",
+          "mochila urban chic",
+          "bolsa mochila",
+          "mochila couro sintético"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branca"
+        ],
+        "notes": "A peça possui fechamento com aba frontal e detalhes em tom metálico dourado nas ferragens e ponteiras."
+      },
+      "missingInfo": [
+        "Capacidade em litros",
+        "Tipo de fechamento do compartimento principal",
+        "Possui compartimento para notebook",
+        "Peso da mochila",
+        "Instruções de limpeza e conservação"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1876,
+      "outputTokens": 473,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 14644,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0011785
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis Performance 100\" - Leve e Versátil",
+      "shortDescription": "Raquete de tênis versátil com cabeça de 100 pol² e peso de 285g. Ideal para jogadores que buscam equilíbrio entre potência e controle em quadra.",
+      "longDescription": "Desenvolvida para oferecer o equilíbrio perfeito entre manuseio e estabilidade, esta raquete de tênis é uma excelente escolha para jogadores de nível intermediário que buscam precisão em seus golpes. Com uma cabeça de 100 polegadas quadradas, ela proporciona um sweet spot generoso que facilita o contato com a bola, garantindo mais consistência em cada troca.",
+      "highlights": [
+        "Cabeça de 100 pol² para maior área de contato",
+        "Peso equilibrado de 285g para fácil manuseio",
+        "Construção durável com 5 anos de garantia",
+        "Design ergonômico para melhor performance"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 100\" | 285g | Alta Performance",
+        "metaDescription": "Compre sua Raquete de Tênis com cabeça de 100 polegadas e 285g. Ideal para controle e potência. Confira a oferta com 5 anos de garantia!",
+        "keywords": [
+          "raquete de tênis",
+          "tênis",
+          "raquete 100 polegadas",
+          "raquete de tênis 285g",
+          "equipamento de tênis"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Vermelho vibrante",
+          "Preto (cabo)"
+        ],
+        "notes": "A raquete apresenta um acabamento em verniz brilhante no aro e um grip preto texturizado que sugere alta aderência."
+      },
+      "missingInfo": [
+        "Padrão de cordas",
+        "Equilíbrio (balance)",
+        "Composição do material (grafite, alumínio, etc.)",
+        "Tamanho do grip (L1, L2, L3, etc.)",
+        "Rigidez (RA)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1186,
+      "outputTokens": 518,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 6434,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0010735
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis 100 pol²",
+      "shortDescription": "Raquete de tênis com cabeça de 100 polegadas quadradas e peso de 285 gramas. Produto vendido sem encordoamento.",
+      "longDescription": "Esta raquete de tênis possui uma cabeça com área de 100 polegadas quadradas e peso total de 285 gramas. O modelo é projetado para oferecer equilíbrio durante a prática esportiva.\n\nO equipamento é comercializado sem o encordoamento, permitindo que o usuário escolha a corda de sua preferência. O produto conta com uma garantia de 5 anos contra defeitos de fabricação.",
+      "highlights": [
+        "Cabeça de 100 polegadas quadradas",
+        "Peso de 285 gramas",
+        "Garantia de 5 anos",
+        "Produto sem encordoamento"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 100 pol² 285g | Loja de Esportes",
+        "metaDescription": "Raquete de tênis com cabeça de 100 pol² e peso de 285g. Produto resistente com 5 anos de garantia. Confira os detalhes técnicos.",
+        "keywords": [
+          "raquete de tênis",
+          "raquete 100 polegadas",
+          "raquete 285g",
+          "equipamento de tênis",
+          "raquete de tênis adulto"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto",
+          "branco"
+        ],
+        "notes": "A raquete apresenta estrutura na cor vermelha, cabo revestido em material preto e rede na cor branca."
+      },
+      "missingInfo": [
+        "Composição do material da raquete",
+        "Comprimento da raquete",
+        "Padrão de encordoamento",
+        "Tamanho do cabo",
+        "Equilíbrio da raquete"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1439,
+      "outputTokens": 481,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3687,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00108125
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis 100 pol² 285g",
+      "shortDescription": "Raquete de tênis com cabeça de 100 pol² e peso de 285 g. Produto vendido sem encordoamento, com garantia de 5 anos.",
+      "longDescription": "A raquete de tênis possui cabeça com 100 pol² de área e peso total de 285 g. É uma opção desenvolvida para a prática do esporte, oferecendo versatilidade para diferentes estilos de jogo.\n\nO equipamento é comercializado sem encordoamento, permitindo que você escolha a corda e a tensão que melhor atendam à sua preferência. Conta com garantia de 5 anos contra defeitos de fabricação.",
+      "highlights": [
+        "Tamanho da cabeça: 100 pol²",
+        "Peso: 285 g",
+        "Garantia de 5 anos",
+        "Vendida sem encordoamento"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 100 pol² 285g - Sem Encordoamento",
+        "metaDescription": "Raquete de tênis com 285 g e cabeça de 100 pol². Garantia de 5 anos. Confira as especificações e garanta a sua.",
+        "keywords": [
+          "raquete de tênis",
+          "raquete 100 pol²",
+          "raquete 285g",
+          "tênis",
+          "equipamento de tênis"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto"
+        ],
+        "notes": "A raquete apresenta aro na cor vermelha e cabo revestido na cor preta com acabamento texturizado."
+      },
+      "missingInfo": [
+        "Material de fabricação",
+        "Comprimento da raquete",
+        "Padrão de cordas",
+        "Balanço (balance)",
+        "Rigidez (RA)",
+        "Tamanho do cabo (grip)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1872,
+      "outputTokens": 495,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4455,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0012105
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "vestido-verao-infantil",
+    "copy": {
+      "title": "Vestido de Verão Infantil Estampa de Folhas",
+      "shortDescription": "Conforto e frescor para os dias quentes com este lindo vestido em viscose, perfeito para passeios e brincadeiras.",
+      "longDescription": "O nosso vestido de verão infantil é a escolha ideal para garantir estilo e leveza nas produções das pequenas. Confeccionado em viscose, um tecido conhecido por seu toque macio e excelente caimento, ele proporciona frescor durante todo o dia, sendo perfeito para enfrentar as temperaturas mais altas com total conforto.",
+      "highlights": [
+        "Tecido em viscose leve e respirável",
+        "Estampa moderna de folhas",
+        "Modelagem confortável para brincar",
+        "Disponível do tamanho 4 ao 10",
+        "Ideal para dias ensolarados"
+      ],
+      "seo": {
+        "metaTitle": "Vestido de Verão Infantil em Viscose - Estampado",
+        "metaDescription": "Encontre o vestido de verão infantil perfeito. Confortável, leve e em viscose. Confira os tamanhos disponíveis e garanta o look das pequenas!",
+        "keywords": [
+          "vestido infantil",
+          "roupa infantil verão",
+          "vestido de viscose",
+          "moda infantil",
+          "vestido estampado",
+          "vestido menina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Preto"
+        ],
+        "notes": "O modelo apresenta um detalhe de recortes nos ombros que traz um charme extra ao design."
+      },
+      "missingInfo": [
+        "Instruções detalhadas de lavagem",
+        "Guia de medidas em centímetros",
+        "Se o modelo possui forro",
+        "Tipo de fechamento"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 2381,
+      "outputTokens": 940,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 15706,
+    "attempts": 2,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "tecido"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00200525
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "vestido-verao-infantil",
+    "copy": {
+      "title": "Vestido de Verão Infantil Estampado",
+      "shortDescription": "Vestido infantil leve confeccionado em viscose, ideal para os dias quentes. Disponível nos tamanhos 4, 6, 8 e 10 anos.",
+      "longDescription": "Este vestido infantil é uma peça versátil para o guarda-roupa da estação. Confeccionado em viscose, o tecido oferece leveza e conforto, sendo uma escolha prática para o uso diário em climas quentes. O modelo possui corte adequado para crianças e design pensado na mobilidade.\n\nA peça está disponível em diversas opções de tamanho, atendendo crianças de 4 a 10 anos de idade. É uma alternativa básica e funcional para compor looks casuais com facilidade.",
+      "highlights": [
+        "Confeccionado em viscose",
+        "Disponível nos tamanhos 4, 6, 8 e 10 anos",
+        "Indicado para o verão",
+        "Design leve e confortável"
+      ],
+      "seo": {
+        "metaTitle": "Vestido de Verão Infantil em Viscose",
+        "metaDescription": "Compre vestido infantil para o verão em viscose. Confortável e leve, disponível nos tamanhos 4 a 10 anos. Confira agora.",
+        "keywords": [
+          "vestido infantil",
+          "roupa infantil feminina",
+          "vestido de verão",
+          "vestido viscose infantil",
+          "moda infantil"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Preto"
+        ],
+        "notes": "O vestido possui estampa de folhas pretas sobre fundo branco, mangas curtas com ombros vazados e comprimento longo."
+      },
+      "missingInfo": [
+        "Tabela de medidas ou guia de tamanhos",
+        "Instruções de lavagem e conservação",
+        "Tipo de fechamento do vestido",
+        "Nome da marca"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1422,
+      "outputTokens": 456,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3347,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "tecido"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0010395
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "vestido-verao-infantil",
+    "copy": {
+      "title": "Vestido de Verão Infantil Estampado",
+      "shortDescription": "Vestido infantil de verão em viscose, disponível nos tamanhos de 4 a 10 anos.",
+      "longDescription": "O vestido de verão infantil é confeccionado em viscose, tecido leve e fresco ideal para os dias mais quentes. O modelo apresenta um corte confortável que acompanha o movimento da criança.\n\nDisponível nos tamanhos 4, 6, 8 e 10 anos, a peça traz uma estampa de folhagens que compõe um visual clássico para diversas ocasiões do dia a dia.",
+      "highlights": [
+        "Confeccionado em viscose",
+        "Estampa de folhagens",
+        "Disponível dos tamanhos 4 ao 10"
+      ],
+      "seo": {
+        "metaTitle": "Vestido de Verão Infantil em Viscose | Tamanhos 4 ao 10",
+        "metaDescription": "Vestido infantil de verão feito em viscose. Modelo leve e confortável com estampa de folhas. Confira os tamanhos disponíveis do 4 ao 10.",
+        "keywords": [
+          "vestido infantil",
+          "roupa infantil verão",
+          "vestido de viscose infantil",
+          "vestido estampado infantil",
+          "moda infantil"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branco",
+          "preto"
+        ],
+        "notes": "A foto mostra um vestido de alcinhas com modelagem acinturada e estampa de folhas pretas sobre fundo branco."
+      },
+      "missingInfo": [
+        "Guia de medidas detalhado (busto, cintura e comprimento)",
+        "Instruções de lavagem e conservação",
+        "Garantia",
+        "Marca do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1855,
+      "outputTokens": 422,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 2628,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "tecido"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00109675
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v1-baseline",
+    "product": "oculos-de-sol-preto",
+    "copy": {
+      "title": "Óculos de Sol Clubmaster Fashion Shades",
+      "shortDescription": "Estilo clássico e proteção garantida. Os Óculos de Sol Fashion Shades oferecem o design atemporal com a proteção UV400 que seus olhos precisam.",
+      "longDescription": "Eleve o seu visual com os Óculos de Sol Fashion Shades, uma peça que une sofisticação e atitude. Com um design icônico de inspiração retrô, esta armação em acetato de alta qualidade garante durabilidade e conforto para o uso prolongado durante todo o seu dia. A tonalidade das lentes oferece um contraste ideal para dias ensolarados, proporcionando um olhar moderno e cheio de personalidade para qualquer ocasião.",
+      "highlights": [
+        "Proteção UV400 contra raios solares",
+        "Design clássico e atemporal",
+        "Armação resistente em acetato",
+        "Conforto para uso diário"
+      ],
+      "seo": {
+        "metaTitle": "Óculos de Sol Clubmaster Fashion Shades | Estilo e Proteção",
+        "metaDescription": "Garanta seu Óculos de Sol Fashion Shades com proteção UV400. Design clássico, resistente e perfeito para o dia a dia. Confira agora!",
+        "keywords": [
+          "óculos de sol",
+          "fashion shades",
+          "óculos clubmaster",
+          "proteção uv400",
+          "óculos de acetato",
+          "acessórios masculinos",
+          "óculos retrô"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Preto",
+          "Dourado",
+          "Verde musgo"
+        ],
+        "notes": "A armação apresenta um acabamento tartaruga com detalhes dourados na ponte e hastes, conferindo um aspecto vintage sofisticado."
+      },
+      "missingInfo": [
+        "Medidas exatas da largura da lente e da ponte",
+        "Informações sobre a existência de estojo ou flanela de limpeza inclusos",
+        "Peso do produto",
+        "Detalhes sobre a política de trocas ou devoluções"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1167,
+      "outputTokens": 488,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 3647,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": false,
+        "detail": "garantida"
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00102375
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "oculos-de-sol-preto",
+    "copy": {
+      "title": "Óculos de Sol Fashion Shades Preto em Acetato",
+      "shortDescription": "Óculos de sol Fashion Shades com armação em acetato e proteção UV400 para seus olhos.",
+      "longDescription": "Os óculos de sol da marca Fashion Shades apresentam um design clássico com armação confeccionada em acetato. O modelo conta com lentes que oferecem proteção UV400, garantindo o bloqueio necessário contra os raios ultravioleta durante o uso diário.\n\nEste acessório é uma peça versátil para compor diferentes estilos com discrição e funcionalidade. O produto é entregue conforme as especificações técnicas, sendo ideal para quem busca praticidade em acessórios de proteção solar.",
+      "highlights": [
+        "Armação fabricada em acetato",
+        "Lentes com proteção UV400",
+        "Design clássico e funcional",
+        "Marca Fashion Shades"
+      ],
+      "seo": {
+        "metaTitle": "Óculos de Sol Fashion Shades Preto em Acetato UV400",
+        "metaDescription": "Compre óculos de sol Fashion Shades com armação de acetato e proteção UV400. Qualidade e proteção para o seu dia a dia.",
+        "keywords": [
+          "óculos de sol",
+          "óculos acetato",
+          "proteção UV400",
+          "Fashion Shades",
+          "acessórios"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "preto",
+          "marrom",
+          "verde"
+        ],
+        "notes": "A foto mostra armação com estampa tartaruga, lentes escuras e detalhes metálicos nas hastes e na ponte."
+      },
+      "missingInfo": [
+        "Medidas da lente (altura e largura)",
+        "Medida da ponte",
+        "Comprimento das hastes",
+        "Conteúdo da embalagem (estojo, flanela ou nota fiscal)",
+        "Peso do produto",
+        "Tipo de polarização das lentes"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1420,
+      "outputTokens": 469,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4642,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0010585
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "oculos-de-sol-preto",
+    "copy": {
+      "title": "Óculos de Sol Fashion Shades Armação Acetato",
+      "shortDescription": "Óculos de sol Fashion Shades com armação em acetato e proteção UV400 para seus olhos.",
+      "longDescription": "Os óculos de sol da Fashion Shades possuem armação feita em acetato, garantindo resistência para o uso diário. O modelo conta com proteção UV400, essencial para bloquear os raios solares nocivos.\n\nCom design clássico e acabamento detalhado, é uma peça versátil para compor diferentes estilos em dias ensolarados.",
+      "highlights": [
+        "Proteção UV400",
+        "Armação em acetato",
+        "Marca Fashion Shades"
+      ],
+      "seo": {
+        "metaTitle": "Óculos de Sol Fashion Shades UV400 | Acetato",
+        "metaDescription": "Óculos de sol Fashion Shades com proteção UV400 e armação de acetato. Confira o modelo e proteja seus olhos com estilo.",
+        "keywords": [
+          "óculos de sol",
+          "óculos uv400",
+          "óculos fashion shades",
+          "óculos de acetato",
+          "acessórios"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "marrom estampado",
+          "dourado",
+          "verde escuro"
+        ],
+        "notes": "A armação apresenta padrão rajado em tons de marrom com detalhes metálicos na ponte e hastes."
+      },
+      "missingInfo": [
+        "Medidas da armação e lentes",
+        "Cor das lentes",
+        "Peso do produto",
+        "Acompanha estojo ou flanela"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1853,
+      "outputTokens": 400,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 2966,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00106325
+  }
+]
