@@ -1,6 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 import { RetryableProviderError, type GenerateRequest, type GenerateResponse, type LlmProvider } from "./types";
 
+const TIMEOUT_MS = 90_000;
+
 /**
  * Gemini through the Interactions API (`client.interactions.create`), the
  * recommended API for new projects. Reads GEMINI_API_KEY from the environment.
@@ -30,6 +32,12 @@ export class GeminiProvider implements LlmProvider {
         // Interactions are stored server-side by default. Catalog data has no
         // reason to be kept by the provider, so opt out.
         store: false,
+      }, {
+        // Without a limit, a stuck request blocks the whole benchmark.
+        timeout_ms: TIMEOUT_MS,
+        // Retries are decided in generate.ts, which knows a 429 from a 403.
+        // SDK retries on top of that would multiply the wait on errors that never recover.
+        retries: { strategy: "none" },
       });
 
       const usage = interaction.usage ?? {};
@@ -43,9 +51,16 @@ export class GeminiProvider implements LlmProvider {
         latencyMs: Math.round(performance.now() - started),
       };
     } catch (error) {
-      const { status, body } = error as { status?: number; body?: string };
+      const { status, body, name } = error as { status?: number; body?: string; name?: string };
       if (body?.includes("API_KEY_INVALID")) {
         throw new Error("GEMINI_API_KEY is not valid. Create a key at https://aistudio.google.com/apikey and put it in .env.");
+      }
+      if (status === 403) {
+        // The key is valid but this model is not enabled for it (common on the free tier).
+        throw new Error(`Model "${request.model}" is not available for this API key (403). Pick another model in src/models.ts.`);
+      }
+      if (/timeout|abort/i.test(`${name} ${(error as Error).message}`)) {
+        throw new RetryableProviderError(`Gemini did not answer within ${TIMEOUT_MS / 1000} s`);
       }
       if (status === 429 || status === 500 || status === 503 || status === 504) {
         throw new RetryableProviderError(`Gemini returned ${status}: ${(error as Error).message}`);
