@@ -10,29 +10,31 @@ spec sheet + photo → prompt (versioned) → Gemini (JSON schema) → validatio
 
 ## Results
 
-First round, 46 generations (2026-10-26). The free tier's daily quota cut `gemini-3.6-flash` at 4 products and `gemini-3.8-flash` at zero; the grid is being completed over the next days ([`results/latest.md`](results/latest.md) is always current).
+57 generations over two days (2026-10-26 and 27). `gemini-3.1-flash-lite` has the full grid; `gemini-3.6-flash` is at 21 of 36 and is being completed as the daily quota allows ([`results/latest.md`](results/latest.md) is always current).
 
 | Model | Prompt | Products | Valid JSON | No invented facts | Avg latency | Output tokens¹ | Cost / 1,000 products |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gemini-3.1-flash-lite | v2-grounded | 11 | 100% | **100%** | 4.2 s | 472 | **$1.07** |
-| gemini-3.1-flash-lite | v3-few-shot | 11 | 100% | 100% | 9.4 s | 483 | $1.23 |
-| gemini-3.6-flash | v2-grounded | 4 | 100% | 100% | 13.4 s | 1,944 | $8.37 |
-| gemini-3.6-flash | v3-few-shot | 4 | 100% | 100% | 15.2 s | 2,017 | $8.97 |
+| gemini-3.1-flash-lite | v2-grounded | 12 | 100% | **100%** | 4.2 s | 474 | **$1.07** |
+| gemini-3.1-flash-lite | v3-few-shot | 12 | 100% | 100% | 9.0 s | 483 | $1.23 |
+| gemini-3.6-flash | v2-grounded | 7 | 100% | 100% | 13.9 s | 1,950 | $8.39 |
+| gemini-3.6-flash | v3-few-shot | 6 | 100% | 100% | 13.4 s | 1,889 | $8.48 |
 | gemini-3.1-flash-lite | v1-baseline | 12 | 100% | 67% | 7.1 s | 592 | $1.21 |
-| gemini-3.6-flash | v1-baseline | 4 | 100% | 25% | 11.8 s | 2,011 | $8.43 |
+| gemini-3.6-flash | v1-baseline | 8 | 100% | 50% | 11.8 s | 1,957 | $8.22 |
 
 ¹ Including thinking tokens, which are billed as output.
 
+**`gemini-3.8-flash`, the newest model, has no results.** On the free tier it was unusable for two days: quota errors on day one, then "high demand" (503) errors, then requests that did not answer within 90 seconds. Availability is a model-selection criterion too: the best model on paper is worth nothing if it does not answer.
+
 **What the numbers say**
 
-1. **The prompt matters more than the model.** With the one-line baseline prompt, both models invented facts in 33% to 75% of the products: "wooden chopping board" when the spec sheet says the material is unknown, "stainless steel lunch box", "guaranteed protection", the price inside the SEO title. With the grounded prompt (v2), zero detected inventions on either model.
+1. **The prompt matters more than the model.** With the one-line baseline prompt, both models invented facts in a third to half of the products: "wooden chopping board" when the spec sheet says the material is unknown, "stainless steel lunch box", "guaranteed protection", the price inside the SEO title. With the grounded prompt (v2), zero detected inventions on either model.
 2. **The cheapest model is enough here.** `gemini-3.1-flash-lite` with v2 matched the bigger model on every check, at **1/8 of the cost and 1/3 of the latency**. The bigger model thinks a lot (about 1,400 thinking tokens per product), which is where its cost goes.
 3. **The few-shot example did not pay off.** v3 scored the same as v2 while being slower and slightly more expensive. The hypothesis in the [changelog](prompts/CHANGELOG.md) was wrong for this task, and that is a useful result too.
 4. **JSON was never the problem.** Structured output gave 100% valid responses everywhere. The failures are all in the content.
 
 **The example that sums it up.** For the chopping board, the baseline prompt listed *"exact type of material"* under `missingInfo`, and in the same answer wrote the SEO title *"Tábua de Corte em Madeira"*. The model knew it did not know, and invented it anyway. The grounded prompt kept the material out of the copy and in `missingInfo`.
 
-**Limits of these checks.** They catch invented numbers, materials, warranties, prices and promises. They do not catch everything: one baseline output called the sunglasses "Clubmaster", a model name that is nowhere in the spec sheet. Catching that kind of invention needs a judge model, planned for module 10. One false positive was also found and fixed: "viscose, um **tecido** leve" was flagged as an invented material; generic words were removed from the list, and saved outputs are re-scored for free on every run (`npm run bench -- --dry-run`).
+**Limits of these checks.** They catch invented numbers, materials, warranties, prices and promises. They do not catch everything: one baseline output called the sunglasses "Clubmaster", a model name that is nowhere in the spec sheet. Catching that kind of invention needs a judge model, planned for module 10. One false positive was also found and fixed: "viscose, um **tecido** leve" was flagged as an invented material; generic words were removed from the list, and saved outputs are re-scored for free on every run (`npm run bench -- --dry-run`). Some cases sit on the line: the sneaker's spec sheet says the upper is "Sintético" and a baseline output wrote "couro sintético" (faux leather). It is counted as invented, since synthetic could also be mesh or knit.
 
 ## How it works
 
@@ -105,6 +107,9 @@ What changed:
 - **Daily quota is not a transient error.** A `429 ... per day` becomes a `QuotaExhaustedError`: no retry, and the benchmark skips that model until the next run.
 - **Fewer, slower retries** for 503 and per-minute 429 (2 extra attempts, waiting 10 s then 20 s), and SDK-level retries are off so they do not stack on top.
 - **Resumable benchmark.** Each result is written to `results/progress.json` as soon as it arrives, and the next run only does what is missing. The full grid (36 calls per model) completes over two or three days. Products are run with all three prompts before moving on, so a partial result still compares prompts on the same products.
+- **Circuit breaker per model** ([`src/circuit-breaker.ts`](src/circuit-breaker.ts)), added on day two when `gemini-3.8-flash` stopped answering and each product took about four minutes to fail. Retries cover one bad moment; a breaker covers a model that is down. After three products in a row fail with overload or timeout, the benchmark stops calling that model for the rest of the run and moves on.
+
+One more lesson, about tooling rather than the API: stopping the first run from the terminal wrapper did not stop the Node process underneath, which kept calling the API in the background and spent quota that looked untouched. When a job spends money or quota, confirm the process is actually gone.
 
 ## Data
 

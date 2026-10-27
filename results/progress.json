@@ -3101,8 +3101,7 @@
       },
       {
         "id": "materials-grounded",
-        "passed": false,
-        "detail": "tecido"
+        "passed": true
       },
       {
         "id": "warranty-grounded",
@@ -3177,8 +3176,7 @@
       },
       {
         "id": "materials-grounded",
-        "passed": false,
-        "detail": "tecido"
+        "passed": true
       },
       {
         "id": "warranty-grounded",
@@ -3252,8 +3250,7 @@
       },
       {
         "id": "materials-grounded",
-        "passed": false,
-        "detail": "tecido"
+        "passed": true
       },
       {
         "id": "warranty-grounded",
@@ -3505,5 +3502,839 @@
       }
     ],
     "costUSD": 0.00106325
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Esportivo Off White Branco e Vermelho",
+      "shortDescription": "Tênis esportivo Off White em couro sintético branco com detalhes e seta em vermelho, garantindo estilo urbano e conforto para o dia a dia.",
+      "longDescription": "O Tênis Esportivo Off White Branco e Vermelho une o design streetwear moderno ao visual dinâmico e marcante. Confeccionado com cabedal sintético de alta durabilidade e acabamento impecável, este modelo destaca-se pelo contraste vibrante entre a base branca e a clássica seta em tom vermelho na lateral.\n\nProjetado para oferecer o máximo conforto durante o uso diário, o tênis conta com solado de borracha resistente que proporciona excelente aderência e estabilidade a cada passo. O interior acolchoado garante o ajuste ideal aos pés, disponível nas numerações do 38 ao 44.\n\nPerfeito para compor looks casuais e urbanos, este calçado é uma peça versátil para quem busca autenticidade e atitude no dia a dia. Combine facilmente com jeans, bermudas ou calças jogger para um visual cheio de personalidade.",
+      "highlights": [
+        "Design urbano moderno com icônica seta lateral em vermelho",
+        "Cabedal em material sintético resistente e de fácil manutenção",
+        "Solado de borracha para maior estabilidade, aderência e durabilidade",
+        "Fechamento por cadarço para um ajuste seguro e confortável"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Esportivo Off White Branco e Vermelho Masculino",
+        "metaDescription": "Compre o Tênis Esportivo Off White Branco e Vermelho. Design streetwear exclusivo, cabedal sintético e solado de borracha. Garanta o seu!",
+        "keywords": [
+          "tênis off white",
+          "tênis branco e vermelho",
+          "tênis masculino streetwear",
+          "tênis esportivo urbano",
+          "calçado masculino off white"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Vermelho",
+          "Cinza translúcido"
+        ],
+        "notes": "A imagem revela recortes translúcidos no solado e um suporte em relevo no calcanhar não mencionados na ficha técnica."
+      },
+      "missingInfo": [
+        "Material do forro interno e da palmilha",
+        "Peso aproximado do produto",
+        "País de origem/fabricação",
+        "Instruções de conservação e limpeza"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1174,
+      "outputTokens": 587,
+      "thoughtTokens": 1474
+    },
+    "latencyMs": 11954,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": false,
+        "detail": "couro"
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00860925
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Esportivo Masculino Off White Branco e Vermelho",
+      "shortDescription": "Tênis esportivo masculino Off White nas cores branco e vermelho, com cabedal em material sintético, solado de borracha e numeração do 38 ao 44.",
+      "longDescription": "O Tênis Esportivo Masculino Off White combina as cores branca e vermelha em um design urbano. Seu cabedal é produzido em material sintético, oferecendo uma estrutura resistente para o uso no dia a dia.\n\nO solado é feito em borracha, proporcionando aderência e estabilidade ao caminhar. O modelo possui fechamento por cadarço e está disponível na numeração do 38 ao 44.",
+      "highlights": [
+        "Cabedal confeccionado em material sintético",
+        "Solado de borracha",
+        "Numeração disponível do 38 ao 44",
+        "Design nas cores branco e vermelho"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Esportivo Off White Branco e Vermelho Masculino",
+        "metaDescription": "Compre o tênis esportivo masculino Off White branco e vermelho. Cabedal sintético e solado de borracha do tamanho 38 ao 44. Acesse e confira!",
+        "keywords": [
+          "tenis esportivo",
+          "tenis off white",
+          "tenis masculino",
+          "tenis branco e vermelho",
+          "calcado masculino"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branco",
+          "vermelho"
+        ],
+        "notes": "O calçado apresenta aplicação em formato de seta na cor vermelha na lateral, cadarço branco e detalhes translúcidos no solado."
+      },
+      "missingInfo": [
+        "Prazo e termos de garantia",
+        "Material do forro interno e da palmilha",
+        "Peso do produto",
+        "País de origem ou fabricação",
+        "Instruções de limpeza e conservação"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1427,
+      "outputTokens": 478,
+      "thoughtTokens": 1426
+    },
+    "latencyMs": 18665,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00821025
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "tenis-esportivo-branco-vermelho",
+    "copy": {
+      "title": "Tênis Esportivo Off White Branco e Vermelho",
+      "shortDescription": "Tênis esportivo masculino Off White nas cores branco e vermelho, com cabedal sintético e solado de borracha.",
+      "longDescription": "O Tênis Esportivo Off White combina cabedal sintético na cor branca com detalhes marcantes em vermelho, incluindo o desenho de seta na lateral. Desenvolvido para o público masculino, está disponível da numeração 38 ao 44.\n\nO solado fabricado em borracha proporciona estabilidade e aderência ao caminhar. O modelo possui cano baixo, fechamento por cadarço e estrutura acolchoada no calcanhar para maior conforto.",
+      "highlights": [
+        "Cabedal em material sintético",
+        "Solado de borracha",
+        "Numeração do 38 ao 44",
+        "Design esportivo masculino"
+      ],
+      "seo": {
+        "metaTitle": "Tênis Esportivo Off White Branco e Vermelho | Tam 38 ao 44",
+        "metaDescription": "Compre o Tênis Esportivo Off White Branco e Vermelho. Cabedal sintético, solado de borracha e numeração do 38 ao 44. Confira!",
+        "keywords": [
+          "tênis off white",
+          "tênis masculino",
+          "tênis branco e vermelho",
+          "tênis esportivo",
+          "calçado masculino"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branco",
+          "vermelho"
+        ],
+        "notes": "O modelo apresenta uma seta vermelha estampada na lateral e recortes translúcidos na base do solado."
+      },
+      "missingInfo": [
+        "Peso do produto",
+        "Material da palmilha e do forro interno",
+        "Garantia do fabricante",
+        "País de origem"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1860,
+      "outputTokens": 452,
+      "thoughtTokens": 994
+    },
+    "latencyMs": 8712,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0068175
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Manga Longa Algodão Classic Wear",
+      "shortDescription": "A Camisa Xadrez Masculina Classic Wear é confeccionada em 100% algodão com modelagem regular e manga longa, garantindo conforto e estilo para o dia a dia.",
+      "longDescription": "A Camisa Xadrez Masculina Classic Wear traz o clássico padrão xadrez em tons de vermelho e preto, perfeito para compor visuais casuais e cheios de atitude. Confeccionada em tecido 100% algodão, ela oferece toque macio, excelente respirabilidade e conforto prolongado para o seu uso diário.\n\nCom modelagem regular e mangas longas, a peça proporciona caimento confortável ao corpo sem restringir os movimentos. O fechamento frontal por botões e o colarinho tradicional tornam essa camisa extremamente versátil, ideal para combinar com jeans, calças de sarja ou utilizar em sobreposições modernas.",
+      "highlights": [
+        "Confecção em tecido 100% algodão com toque macio",
+        "Estampa xadrez estilo lenhador nas cores vermelho e preto",
+        "Modelagem regular para caimento confortável ao corpo",
+        "Manga longa com fechamento frontal e punhos por botões"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina 100% Algodão | Classic Wear",
+        "metaDescription": "Compre a Camisa Xadrez Masculina Classic Wear em 100% algodão. Manga longa, modelagem regular e estilo para qualquer ocasião. Confira!",
+        "keywords": [
+          "camisa xadrez masculina",
+          "camisa xadrez vermelha e preta",
+          "camisa manga longa masculina",
+          "camisa 100% algodao",
+          "camisa classic wear"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Vermelho",
+          "Preto"
+        ],
+        "notes": "A peça possui padronagem xadrez grande tipo Buffalo Plaid com botões claros em contraste."
+      },
+      "missingInfo": [
+        "Tabela de medidas exatas do produto em centímetros para cada tamanho (P, M, G, GG)",
+        "Instruções específicas de lavagem e conservação",
+        "Gramatura do tecido e indicação de ser flanelada ou tecido leve",
+        "Origem de fabricação do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1181,
+      "outputTokens": 573,
+      "thoughtTokens": 1397
+    },
+    "latencyMs": 11967,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00827325
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Manga Longa Classic Wear",
+      "shortDescription": "Camisa xadrez masculina Classic Wear com manga longa e modelagem regular. Confeccionada em tecido 100% algodão, disponível nos tamanhos P ao GG.",
+      "longDescription": "A camisa xadrez masculina da Classic Wear é confeccionada em tecido 100% algodão, oferecendo caimento clássico para o uso diário. Seu visual conta com padronagem xadrez nas cores vermelha e preta, fechamento frontal por botões claros e gola tradicional.\n\nO modelo possui mangas longas com abotoamento nos punhos e corte com modelagem regular, garantindo estrutura equilibrada ao corpo. Está disponível nos tamanhos P, M, G e GG.",
+      "highlights": [
+        "Composição em 100% algodão",
+        "Modelagem regular e manga longa",
+        "Fechamento frontal por botões",
+        "Disponível nos tamanhos P, M, G e GG"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina 100% Algodão Classic Wear",
+        "metaDescription": "Compre a Camisa Xadrez Masculina Classic Wear. Modelo em 100% algodão, manga longa e corte regular. Disponível nos tamanhos P, M, G e GG.",
+        "keywords": [
+          "camisa xadrez masculina",
+          "camisa xadrez vermelha e preta",
+          "camisa 100% algodão",
+          "camisa manga longa",
+          "classic wear"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto"
+        ],
+        "notes": "A camisa possui estampa xadrez tipo búfalo nas cores vermelha e preta, acompanhada de botões brancos na parte frontal."
+      },
+      "missingInfo": [
+        "Tabela de medidas exatas em centímetros (comprimento, tórax, ombros e mangas)",
+        "Instruções de lavagem e conservação",
+        "País de fabricação do produto"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1434,
+      "outputTokens": 514,
+      "thoughtTokens": 1335
+    },
+    "latencyMs": 10179,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00800925
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "camisa-xadrez-masculina",
+    "copy": {
+      "title": "Camisa Xadrez Masculina Classic Wear 100% Algodão",
+      "shortDescription": "Camisa xadrez masculina de manga longa Classic Wear. Confeccionada em 100% algodão, possui modelagem regular e fechamento por botões.",
+      "longDescription": "A Camisa Xadrez Masculina da Classic Wear é confeccionada em tecido 100% algodão, oferecendo caimento confortável com modelagem regular para o uso no dia a dia.\n\nO modelo conta com manga longa, gola tradicional e fechamento por botões. Sua estampa xadrez combina as cores vermelha e preta.\n\nEstá disponível nos tamanhos P, M, G e GG.",
+      "highlights": [
+        "Confeccionada em 100% algodão",
+        "Manga longa e modelagem regular",
+        "Estampa xadrez em vermelho e preto",
+        "Tamanhos disponíveis do P ao GG"
+      ],
+      "seo": {
+        "metaTitle": "Camisa Xadrez Masculina 100% Algodão | Classic Wear",
+        "metaDescription": "Compre a Camisa Xadrez Masculina Classic Wear. Produzida em 100% algodão, com manga longa e modelagem regular. Disponível nos tamanhos P ao GG.",
+        "keywords": [
+          "camisa xadrez",
+          "camisa xadrez masculina",
+          "camisa manga longa",
+          "camisa 100 algodao",
+          "camisa classic wear",
+          "moda masculina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto"
+        ],
+        "notes": "Estampa em xadrez vermelho e preto com botões frontais brancos e sem bolso no peito."
+      },
+      "missingInfo": [
+        "Instruções de lavagem e conservação",
+        "Tabela de medidas exatas em centímetros",
+        "Tipo do tecido (como flanela ou tricoline)",
+        "País de fabricação"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1867,
+      "outputTokens": 498,
+      "thoughtTokens": 1322
+    },
+    "latencyMs": 10598,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00822525
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Abajur de Mesa Tropical Macacos e Bananeira 45cm Bivolt",
+      "shortDescription": "Traga o charme tropical para sua decoração com este abajur de mesa temático com base de macacos e detalhes de bananeira. Soquete E27 e bivolt.",
+      "longDescription": "Adicione personalidade e um toque exótico ao seu ambiente com esta luminária de mesa de estilo tropical. Sua base detalhada traz entalhes inspirados na natureza com simpáticos macacos esculpidos ao redor do pedestal e um cacho de bananas verdes sob a cúpula, criando uma peça decorativa única e cheia de estilo.\n\nA cúpula em tom âmbar aquecido proporciona uma iluminação suave e aconchegante, ideal para salas de estar, quartos ou escritórios. Compatível com lâmpadas de soquete E27 e funcionamento bivolt, garante facilidade na instalação e versatilidade para criar o clima perfeito no seu espaço.",
+      "highlights": [
+        "Design tropical exclusivo com esculturas de macacos e bananeira",
+        "Cúpula em tom âmbar para uma iluminação acolhedora",
+        "Altura versátil de 45 cm ideal para mesas de cabeceira e aparadores",
+        "Soquete padrão E27 e sistema elétrico bivolt"
+      ],
+      "seo": {
+        "metaTitle": "Abajur de Mesa Tropical Macacos 45cm Bivolt E27",
+        "metaDescription": "Compre luminária de mesa tropical com detalhes de macacos e bananeira. Peça decorativa de 45cm, bivolt com soquete E27. Confira!",
+        "keywords": [
+          "abajur de mesa",
+          "luminaria tropical",
+          "abajur macaco",
+          "luminaria decorativa",
+          "iluminacao de mesa",
+          "abajur bivolt"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "marrom",
+          "verde",
+          "amarelo dourado"
+        ],
+        "notes": "A base esculpida apresenta detalhes de macacos na parte inferior e um cacho de bananas verde logo abaixo da cúpula."
+      },
+      "missingInfo": [
+        "Material de fabricação do corpo e da cúpula",
+        "Diâmetro da cúpula e da base",
+        "Comprimento do cabo de energia e localização do interruptor",
+        "Potência máxima suportada (Watts)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1174,
+      "outputTokens": 576,
+      "thoughtTokens": 1146
+    },
+    "latencyMs": 10124,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.007338
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso Cachepô Decorativo Preto 20cm x 14cm",
+      "shortDescription": "Vaso decorativo preto de 20 cm sem furo de drenagem, ideal para destacar suas plantas com estilo e elegância em qualquer ambiente interno.",
+      "longDescription": "Traga mais sofisticação e vida para a sua decoração com este elegante vaso decorativo preto. Com um design arredondado e acabamento moderno, ele é a escolha perfeita para compor salas, escritórios, varandas cobertas e prateleiras com muito estilo.\n\nPor não possuir furo de drenagem, este vaso funciona perfeitamente como cachepô, evitando o vazamento de água e protegendo suas superfícies e móveis. É ideal para acomodar mudas e folhagens mantendo a praticidade no dia a dia.\n\nCom dimensões de 20 cm de altura por 14 cm de diâmetro, ele possui o tamanho ideal para se destacar em diversos espaços sem ocupar muito lugar. Renove o visual da sua casa e valorize suas plantas favoritas com esta peça versátil.",
+      "highlights": [
+        "Design moderno e arredondado na cor preta.",
+        "Ideal como cachepô, prevenindo vazamentos de água em móveis.",
+        "Sem furo de drenagem para maior praticidade em ambientes internos.",
+        "Dimensões compactas: 20 cm de altura por 14 cm de diâmetro."
+      ],
+      "seo": {
+        "metaTitle": "Vaso Decorativo Preto 20cm Cachepô para Plantas",
+        "metaDescription": "Compre o Vaso Decorativo Preto 20cm sem furo de drenagem. Perfeito como cachepô para plantas e decoração de interiores. Confira!",
+        "keywords": [
+          "vaso decorativo",
+          "cachepo preto",
+          "vaso para plantas",
+          "decoracao de interiores",
+          "cachepot decorativo",
+          "vaso 20cm"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Preto",
+          "Verde"
+        ],
+        "notes": "O vaso possui formato bojudo arredondado e está apresentado com uma folhagem verde exuberante em seu interior."
+      },
+      "missingInfo": [
+        "Material de fabricação do vaso (ex: cerâmica, plástico, resina).",
+        "Se a planta exibida na imagem está inclusa ou é meramente ilustrativa.",
+        "Peso aproximado do produto."
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1169,
+      "outputTokens": 582,
+      "thoughtTokens": 1278
+    },
+    "latencyMs": 13238,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00785175
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso Decorativo para Plantas 20 cm x 14 cm",
+      "shortDescription": "Vaso para plantas com 20 cm de altura e 14 cm de diâmetro. Modelo sem furo de drenagem, ideal para compor a decoração de ambientes.",
+      "longDescription": "O Vaso para Plantas é um item decorativo com 20 cm de altura e 14 cm de diâmetro. Seu formato compacto e arredondado permite a acomodação em superfícies como mesas, prateleiras e balcões.\n\nEste modelo não possui furo de drenagem na base. Por esse motivo, é indicado para uso como cachepô ou para plantas e arranjos que não necessitem de escoamento direto de água.",
+      "highlights": [
+        "Medidas: 20 cm de altura e 14 cm de diâmetro",
+        "Sem furo de drenagem na base",
+        "Indicado para decoração de ambientes internos"
+      ],
+      "seo": {
+        "metaTitle": "Vaso Decorativo para Plantas 20 cm x 14 cm",
+        "metaDescription": "Vaso decorativo para plantas com 20 cm de altura e 14 cm de diâmetro. Modelo sem furo de drenagem para decoração da casa.",
+        "keywords": [
+          "vaso para plantas",
+          "vaso decorativo",
+          "vaso sem furo",
+          "vaso 20 cm",
+          "decoracao de casa"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "cinza escuro",
+          "verde"
+        ],
+        "notes": "A foto mostra um vaso arredondado de cor escura contendo uma planta verde de folhagem densa."
+      },
+      "missingInfo": [
+        "Material de fabricação do vaso",
+        "Se a planta ilustrada na foto acompanha o produto",
+        "Peso do vaso",
+        "Marca do fabricante",
+        "Prazo de garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1422,
+      "outputTokens": 473,
+      "thoughtTokens": 1651
+    },
+    "latencyMs": 14583,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0090315
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v2-grounded",
+    "product": "espatula-bambu",
+    "copy": {
+      "title": "Espátula de Bambu para Cozinha 30 cm",
+      "shortDescription": "Espátula de bambu com 30 cm de comprimento, ideal para preparar alimentos e compatível com panelas antiaderentes.",
+      "longDescription": "A espátula de bambu é um utensílio prático para o dia a dia na cozinha. Com 30 cm de comprimento, oferece o alcance necessário para manusear ingredientes com segurança durante o preparo de suas refeições. O material é indicado para uso em diversas superfícies, inclusive em panelas com revestimento antiaderente, pois não risca ou danifica o material.\n\nO design conta com um orifício na extremidade do cabo, facilitando o armazenamento ou a organização do utensílio em ganchos. É uma peça simples e funcional para compor seus acessórios de culinária.",
+      "highlights": [
+        "Comprimento total de 30 cm",
+        "Produzida em bambu",
+        "Segura para panelas antiaderentes",
+        "Possui orifício para pendurar",
+        "Garantia de 1 mês"
+      ],
+      "seo": {
+        "metaTitle": "Espátula de Bambu 30 cm - Utensílio de Cozinha",
+        "metaDescription": "Espátula de bambu de 30 cm para cozinha. Ideal para panelas antiaderentes, prática e resistente. Confira o produto.",
+        "keywords": [
+          "espátula de bambu",
+          "utensílios de cozinha",
+          "espátula para panelas",
+          "utensílio de madeira",
+          "cozinha"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Bege"
+        ],
+        "notes": "A espátula possui formato plano com ponta levemente chanfrada e um orifício circular na extremidade do cabo."
+      },
+      "missingInfo": [
+        "Largura da ponta da espátula",
+        "Espessura do cabo",
+        "Peso do produto",
+        "Instruções de higienização e conservação",
+        "Marca do fabricante"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1436,
+      "outputTokens": 502,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 4477,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.001112
+  },
+  {
+    "model": "gemini-3.1-flash-lite",
+    "prompt": "v3-few-shot",
+    "product": "liquidificador-compacto",
+    "copy": {
+      "title": "Liquidificador Compacto 600W 1,5L 127V",
+      "shortDescription": "Liquidificador compacto com 600W de potência, copo de 1,5 litros e 3 velocidades, ideal para o preparo de diversas receitas no dia a dia.",
+      "longDescription": "O Liquidificador Compacto possui 600W de potência e copo com capacidade de 1,5 litros, sendo uma opção prática para preparar vitaminas, sucos e receitas variadas na sua cozinha.\n\nO aparelho conta com 3 velocidades ajustáveis e a função pulsar, oferecendo versatilidade conforme a necessidade de cada preparo. Este modelo funciona exclusivamente em voltagem 127V.",
+      "highlights": [
+        "Potência de 600W",
+        "Copo com 1,5 litros de capacidade",
+        "3 velocidades e função pulsar",
+        "5 anos de garantia"
+      ],
+      "seo": {
+        "metaTitle": "Liquidificador Compacto 600W 1,5L 127V | 3 Velocidades",
+        "metaDescription": "Liquidificador compacto com 600W de potência, 1,5L de capacidade e 3 velocidades. Confira as especificações e garanta o seu.",
+        "keywords": [
+          "liquidificador",
+          "liquidificador compacto",
+          "eletroportáteis cozinha",
+          "liquidificador 600W",
+          "liquidificador 127V"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "prata",
+          "preto",
+          "azul"
+        ],
+        "notes": "A base possui acabamento prateado com seletor de velocidades na cor azul e tampa preta."
+      },
+      "missingInfo": [
+        "Material do copo",
+        "Material das lâminas",
+        "Se possui filtro",
+        "Dimensões do produto",
+        "Peso do produto",
+        "Comprimento do cabo de energia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1882,
+      "outputTokens": 480,
+      "thoughtTokens": 0
+    },
+    "latencyMs": 5154,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0011905
   }
 ]

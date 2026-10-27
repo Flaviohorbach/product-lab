@@ -8,7 +8,8 @@ import { MODELS, PRICES_CHECKED_ON, findModel } from "../models";
 import { loadProducts } from "../product";
 import { listPromptVersions, loadPrompt } from "../prompts";
 import { GeminiProvider } from "../providers/gemini";
-import { QuotaExhaustedError } from "../providers/types";
+import { QuotaExhaustedError, RetryableProviderError } from "../providers/types";
+import { CircuitBreaker } from "../circuit-breaker";
 
 // Usage: npm run bench -- [--models a,b] [--prompts v1-baseline,v2-grounded] [--limit 4] [--delay 6000] [--fresh]
 //
@@ -62,9 +63,11 @@ console.log(`${done.size} results already saved, ${todo.length} to run.\n`);
 await mkdir("results", { recursive: true });
 
 const exhausted = new Set<string>();
+// Three items in a row failing with overload or timeout: treat the model as down for this run.
+const breaker = new CircuitBreaker(3);
 let aborted = false;
 for (const [i, { model, prompt, product }] of todo.entries()) {
-  if (exhausted.has(model.id)) continue;
+  if (exhausted.has(model.id) || breaker.isOpen(model.id)) continue;
   process.stdout.write(`[${i + 1}/${todo.length}] ${model.id} · ${prompt.version} · ${product.id} … `);
   try {
     const result = await generateCopy({ provider, model: model.id, prompt, product, image: await loadImage(product.imageUrl) });
@@ -72,6 +75,7 @@ for (const [i, { model, prompt, product }] of todo.entries()) {
     // Invalid answers are a real result (the model failed the task), so they are saved too.
     records.push(toRecord({ model: model.id, prompt: prompt.version, product: product.id, ...result }, model, checks));
     await writeFile(PROGRESS, JSON.stringify(records, null, 2));
+    breaker.recordSuccess(model.id);
     const failed = checks.filter((c) => !c.passed).map((c) => c.id);
     console.log(result.copy ? (failed.length ? `✗ ${failed.join(", ")}` : "✓") : `invalid: ${result.error}`);
   } catch (error) {
@@ -89,6 +93,9 @@ for (const [i, { model, prompt, product }] of todo.entries()) {
     // Overload that outlasted the retries, a model not enabled for the key...
     // Not saved, so the next run tries it again.
     console.log(`error: ${message}`);
+    if (error instanceof RetryableProviderError && breaker.recordFailure(model.id)) {
+      console.log(`${model.id} failed 3 items in a row: skipping it for this run. Try it again later.`);
+    }
   }
   await new Promise((resolve) => setTimeout(resolve, delay));
 }
