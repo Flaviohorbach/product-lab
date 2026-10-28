@@ -4336,5 +4336,771 @@
       }
     ],
     "costUSD": 0.0011905
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Luminária de Mesa Decorativa Tema Tropical 45cm Bivolt",
+      "shortDescription": "Luminária de mesa bivolt com 45 cm de altura, soquete E27 e design decorativo em formato de palmeira com macacos na base.",
+      "longDescription": "A luminária de mesa possui 45 cm de altura e conta com estrutura bivolt, sendo compatível com redes elétricas de 110V e 220V. Seu soquete no padrão E27 permite a utilização de diversos tipos de lâmpadas compatíveis com esse encaixe.\n\nO design apresenta uma base decorativa inspirada no tema tropical, com detalhes que lembram o tronco de uma palmeira, figuras de macacos na parte inferior e bananas verdes esculpidas logo abaixo da cúpula. A cúpula possui tonalidade amarelada e formato afunilado.\n\nA lâmpada não acompanha o produto e deve ser adquirida separadamente. O item é indicado para apoio em superfícies planas, como mesas de cabeceira, aparadores e escrivaninhas.",
+      "highlights": [
+        "Altura total de 45 cm",
+        "Alimentação bivolt",
+        "Soquete padrão E27",
+        "Design decorativo com tema tropical",
+        "Lâmpada não inclusa"
+      ],
+      "seo": {
+        "metaTitle": "Luminária de Mesa Bivolt 45cm Soquete E27 Decorativa",
+        "metaDescription": "Compre luminária de mesa bivolt com 45 cm de altura e soquete E27. Design decorativo de palmeira. Confira detalhes e especificações.",
+        "keywords": [
+          "luminaria de mesa",
+          "iluminacao decorativa",
+          "luminaria bivolt",
+          "luminaria e27",
+          "abajur decorativo"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Marrom",
+          "Bege",
+          "Verde",
+          "Amarelo"
+        ],
+        "notes": "A luminária apresenta formato esculpido com figuras de macacos na base, tronco texturizado e cúpula amarelada."
+      },
+      "missingInfo": [
+        "Material da base e da cúpula",
+        "Potência máxima suportada para a lâmpada (Watts)",
+        "Comprimento do cabo de alimentação",
+        "Tipo e localização do interruptor (liga/desliga)",
+        "Diâmetro da cúpula e da base",
+        "Peso do produto",
+        "Garantia do fabricante"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1427,
+      "outputTokens": 614,
+      "thoughtTokens": 1734
+    },
+    "latencyMs": 15352,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": false,
+        "detail": "110, 220"
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00987525
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "luminaria-de-mesa",
+    "copy": {
+      "title": "Luminária de Mesa 45 cm Bivolt Soquete E27",
+      "shortDescription": "Luminária de mesa bivolt com 45 cm de altura e soquete E27. Design temático decorativo para iluminação de ambientes. Não acompanha lâmpada.",
+      "longDescription": "A Luminária de Mesa de 45 cm de altura é uma opção decorativa para iluminação de ambientes internos. Possui soquete E27 e funciona em tensão bivolt, permitindo o uso em diferentes tomadas.\n\nO design temático conta com base decorada com figuras de macacos, haste em formato de tronco e detalhe de bananas verdes abaixo da cúpula amarela.\n\nO produto não acompanha lâmpada, permitindo que você escolha a lâmpada com soquete E27 com a intensidade e temperatura de cor de sua preferência.",
+      "highlights": [
+        "Altura de 45 cm",
+        "Soquete E27",
+        "Funcionamento Bivolt",
+        "Design temático esculpido"
+      ],
+      "seo": {
+        "metaTitle": "Luminária de Mesa Bivolt 45cm Soquete E27",
+        "metaDescription": "Luminária de mesa com 45 cm de altura, soquete E27 e tensão bivolt. Ideal para decoração e iluminação de interiores. Confira!",
+        "keywords": [
+          "luminária de mesa",
+          "luminária bivolt",
+          "luminaria e27",
+          "luminaria decorativa",
+          "luminaria 45 cm",
+          "iluminação decorativa"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "marrom",
+          "amarelo",
+          "verde"
+        ],
+        "notes": "Base decorada com figuras de macacos e haste em formato de tronco de palmeira com cacho de bananas sob a cúpula."
+      },
+      "missingInfo": [
+        "Material de fabricação do corpo e da cúpula",
+        "Potência máxima de lâmpada suportada",
+        "Comprimento do cabo de alimentação e presença de interruptor",
+        "Peso do produto",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1860,
+      "outputTokens": 523,
+      "thoughtTokens": 1244
+    },
+    "latencyMs": 10331,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00802125
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "vaso-de-planta",
+    "copy": {
+      "title": "Vaso para Plantas 20 cm x 14 cm Sem Furo",
+      "shortDescription": "Vaso para plantas com 20 cm de altura e 14 cm de diâmetro. Modelo sem furo de drenagem, ideal para decoração de ambientes.",
+      "longDescription": "O Vaso para Plantas possui 20 cm de altura e 14 cm de diâmetro. Por não possuir furo de drenagem, pode ser utilizado como cachepô para compor a decoração da sua casa.\n\nSeu formato arredondado combina com diferentes estilos de espaço, sendo uma opção para posicionar sobre mesas, prateleiras e balcões.",
+      "highlights": [
+        "Altura de 20 cm",
+        "Diâmetro de 14 cm",
+        "Sem furo de drenagem"
+      ],
+      "seo": {
+        "metaTitle": "Vaso para Plantas 20 cm x 14 cm | Decoração",
+        "metaDescription": "Vaso para plantas sem furo de drenagem com 20 cm de altura e 14 cm de diâmetro. Confira as especificações!",
+        "keywords": [
+          "vaso para plantas",
+          "vaso sem furo",
+          "vaso de decoração",
+          "vaso 20 cm",
+          "cachepo"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "preto",
+          "verde"
+        ],
+        "notes": "Vaso de formato arredondado contendo folhagem verde."
+      },
+      "missingInfo": [
+        "Material do vaso",
+        "Se a planta acompanha o produto ou se é apenas ilustrativa",
+        "Peso do produto",
+        "Garantia"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1855,
+      "outputTokens": 415,
+      "thoughtTokens": 1220
+    },
+    "latencyMs": 10070,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0075225
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "mochila-couro-sintetico-branca",
+    "copy": {
+      "title": "Mochila Feminina Branca Urban Chic Couro Sintético",
+      "shortDescription": "Mochila feminina branca Urban Chic em couro sintético, com bolso frontal e compartimento principal. Medidas de 30 x 25 x 12 cm e garantia de 2 anos.",
+      "longDescription": "A mochila feminina branca da marca Urban Chic é produzida em couro sintético e possui formato estruturado. O modelo apresenta aba superior sobre o fechamento frontal e tiras decorativas.\n\nCom dimensões de 30 cm de altura, 25 cm de largura e 12 cm de profundidade, a estrutura conta com um compartimento principal e um bolso frontal para a organização de objetos pessoais.\n\nO produto possui 2 anos de garantia oferecidos pelo fabricante.",
+      "highlights": [
+        "Confeccionada em couro sintético",
+        "Dimensões de 30 x 25 x 12 cm",
+        "1 compartimento principal e 1 bolso frontal",
+        "Garantia de 2 anos"
+      ],
+      "seo": {
+        "metaTitle": "Mochila Feminina Branca Urban Chic | Couro Sintético",
+        "metaDescription": "Compre a Mochila Feminina Branca Urban Chic em couro sintético. Medidas 30x25x12 cm, bolso frontal e compartimento principal. Garantia de 2 anos.",
+        "keywords": [
+          "mochila feminina",
+          "mochila branca",
+          "mochila couro sintetico",
+          "mochila urban chic",
+          "bolsa mochila"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Dourado"
+        ],
+        "notes": "A foto mostra a mochila em tom branco com detalhes metálicos na cor dourada na aba frontal, nas ponteiras dos cordões e nos zíperes laterais."
+      },
+      "missingInfo": [
+        "Capacidade total em litros",
+        "Peso do produto",
+        "Material do forro interno",
+        "Indicação de compartimento interno para notebook ou tablet",
+        "Resistência ou impermeabilidade a água"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1443,
+      "outputTokens": 510,
+      "thoughtTokens": 1891
+    },
+    "latencyMs": 16094,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.010086
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "mochila-couro-sintetico-branca",
+    "copy": {
+      "title": "Mochila Feminina Branca Urban Chic Couro Sintético",
+      "shortDescription": "Mochila feminina branca Urban Chic em couro sintético com 2 compartimentos, dimensões de 30x25x12 cm e 2 anos de garantia.",
+      "longDescription": "A Mochila Feminina Branca da Urban Chic é confeccionada em couro sintético e possui dimensões de 30 x 25 x 12 cm, oferecendo espaço adequado para o transporte de itens do dia a dia.\n\nO modelo conta com um compartimento principal e um bolso frontal para organização dos pertences. Além disso, o produto tem garantia de 2 anos assegurada pela marca.",
+      "highlights": [
+        "Material em couro sintético",
+        "Dimensões de 30 x 25 x 12 cm",
+        "1 compartimento principal e 1 bolso frontal",
+        "Garantia de 2 anos"
+      ],
+      "seo": {
+        "metaTitle": "Mochila Feminina Branca Urban Chic | Couro Sintético",
+        "metaDescription": "Mochila feminina branca Urban Chic em couro sintético. Medidas de 30x25x12 cm com 1 compartimento principal e 1 bolso frontal. Confira!",
+        "keywords": [
+          "mochila feminina branca",
+          "mochila urban chic",
+          "mochila couro sintetico",
+          "mochila feminina casual",
+          "bolsa mochila branca"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "branca",
+          "dourado"
+        ],
+        "notes": "A mochila apresenta fechamento por aba com detalhe metálico dourado, cordões pendentes e alça de mão na parte superior."
+      },
+      "missingInfo": [
+        "Capacidade em litros",
+        "Peso da mochila",
+        "Se as alças de costas possuem regulagem de tamanho",
+        "Presença de divisórias ou bolsos internos com zíper",
+        "Resistência à água"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1876,
+      "outputTokens": 486,
+      "thoughtTokens": 1393
+    },
+    "latencyMs": 10005,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00845325
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis Vermelha 285g Cabeça 100 pol²",
+      "shortDescription": "A raquete de tênis de 285g com cabeça 100 pol² oferece excelente equilíbrio entre controle, precisão e potência para as suas partidas.",
+      "longDescription": "Esta raquete de tênis é a escolha ideal para jogadores que buscam um equipamento versátil e de alta durabilidade para melhorar seu desempenho nas quadras. Com um peso intermediário de 285 gramas e cabeça de 100 polegadas quadradas, ela proporciona uma combinação perfeita de precisão nos golpes, tolerância a falhas e bom manuseio durante o jogo.\n\nA peça vem acompanhada de uma garantia de 5 anos, assegurando a qualidade de sua estrutura para treinamentos intensos e partidas competitivas. Por ser comercializada sem encordoamento, permite ao tenista personalizar a tensão e o tipo de corda ideal para o seu estilo de jogo.\n\nSeu visual moderno na cor vermelha com cabo preto destaca-se na quadra, unindo estilo e funcionalidade em um único produto ideal para elevar o nível da sua prática esportiva.",
+      "highlights": [
+        "Peso de 285g ideal para excelente manuseabilidade",
+        "Cabeça de 100 pol² com ótima área do ponto doce (sweet spot)",
+        "Garantia de fábrica de 5 anos",
+        "Vendida sem encordoamento para personalização do jogador"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 285g Cabeça 100 - Compre Online",
+        "metaDescription": "Garanta sua raquete de tênis 285g com cabeça 100 pol² e 5 anos de garantia. Ideal para maior controle e precisão. Confira!",
+        "keywords": [
+          "raquete de tenis",
+          "raquete 285g",
+          "raquete cabeca 100",
+          "equipamento de tenis",
+          "raquete vermelha tenis"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Vermelho",
+          "Preto",
+          "Branco"
+        ],
+        "notes": "A imagem mostra o aro e o coração da raquete em vermelho vibrante com a empunhadura revestida por grip preto."
+      },
+      "missingInfo": [
+        "Composição do material (ex: grafite, fibra de carbono, alumínio)",
+        "Tamanho da empunhadura/grip (ex: L2, L3, L4)",
+        "Padrão de encordoamento (ex: 16x19, 18x20)",
+        "Ponto de equilíbrio (balanço em cm/mm)"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1186,
+      "outputTokens": 645,
+      "thoughtTokens": 1552
+    },
+    "latencyMs": 13012,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00912825
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis 285g Cabeça 100 pol² sem Encordoamento",
+      "shortDescription": "Raquete de tênis com peso de 285 g, cabeça de 100 pol² e garantia de 5 anos. Produto vendido sem encordoamento.",
+      "longDescription": "A raquete de tênis possui peso de 285 gramas e cabeça com área de 100 polegadas quadradas, voltada para a prática de tênis.\n\nEste modelo é comercializado sem encordoamento, possibilitando a instalação posterior do encordoamento adequado à sua preferência.\n\nO produto conta com 5 anos de garantia oferecidos pelo fabricante.",
+      "highlights": [
+        "Peso de 285 g",
+        "Tamanho da cabeça de 100 pol²",
+        "Vendida sem encordoamento",
+        "Garantia de 5 anos"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 285g Cabeça 100 pol²",
+        "metaDescription": "Confira a raquete de tênis com peso de 285 g e cabeça de 100 pol². Vendida sem encordoamento e com garantia de 5 anos.",
+        "keywords": [
+          "raquete de tenis",
+          "raquete 285g",
+          "raquete cabeca 100",
+          "equipamento de tenis",
+          "tenis esporte"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto",
+          "branco"
+        ],
+        "notes": "A foto mostra a raquete com estrutura na cor vermelha, empunhadura preta e grade perfurada no centro."
+      },
+      "missingInfo": [
+        "Marca do fabricante",
+        "Composição do material da estrutura",
+        "Tamanho do cabo ou empunhadura (grip)",
+        "Padrão de encordoamento recomendado",
+        "Balanço ou ponto de equilíbrio da raquete"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1439,
+      "outputTokens": 495,
+      "thoughtTokens": 1499
+    },
+    "latencyMs": 11388,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00855675
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v3-few-shot",
+    "product": "raquete-de-tenis",
+    "copy": {
+      "title": "Raquete de Tênis 285g Cabeça 100 pol²",
+      "shortDescription": "Raquete de tênis com peso de 285 g, cabeça de 100 pol² e garantia de 5 anos. Produto vendido sem encordoamento.",
+      "longDescription": "A Raquete de Tênis possui peso de 285 g e cabeça com tamanho de 100 polegadas quadradas. O modelo é vendido sem encordoamento, permitindo a escolha do tipo de corda e da tensão de preferência do praticante.\n\nEste produto conta com garantia de 5 anos diretamente com o fabricante.",
+      "highlights": [
+        "Peso de 285 g",
+        "Tamanho da cabeça de 100 pol²",
+        "Vendida sem encordoamento",
+        "Garantia de 5 anos"
+      ],
+      "seo": {
+        "metaTitle": "Raquete de Tênis 285g Cabeça 100 pol² | Garantia 5 Anos",
+        "metaDescription": "Raquete de tênis com peso de 285 g e cabeça de 100 pol². Vendida sem encordoamento e com garantia de 5 anos. Confira!",
+        "keywords": [
+          "raquete de tenis",
+          "raquete tenis 285g",
+          "raquete cabeca 100",
+          "raquete sem encordoamento",
+          "artigos de tenis"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "vermelho",
+          "preto",
+          "branco"
+        ],
+        "notes": "Estrutura do aro na cor vermelha com empunhadura preta."
+      },
+      "missingInfo": [
+        "Material de composição da raquete",
+        "Tamanho da empunhadura (L1, L2, L3, L4)",
+        "Padrão de encordoamento recomendado (ex: 16x19)",
+        "Ponto de equilíbrio (balanço)",
+        "Indicação de nível de jogo"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1872,
+      "outputTokens": 498,
+      "thoughtTokens": 1482
+    },
+    "latencyMs": 10874,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.008829
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v1-baseline",
+    "product": "vestido-verao-infantil",
+    "copy": {
+      "title": "Vestido Infantil Longo de Verão Estampa Folhagem Viscose",
+      "shortDescription": "Vestido longo infantil leve e fresco em viscose com estampa tropical de folhagens e decote ombro a ombro com alcinhas.",
+      "longDescription": "O Vestido de Verão Infantil é a escolha perfeita para garantir leveza, conforto e muito estilo nos dias mais quentes. Confeccionado em viscose de alta qualidade, ele oferece um caimento fluido e toque macio sobre a pele, permitindo total liberdade de movimento para as crianças aproveitarem qualquer ocasião.\n\nSeu design conta com uma moderna estampa tropical de folhagens em preto e branco, combinando perfeitamente com o charme do decote estilo ombro a ombro acompanhado de alcinhas delicadas. A cintura com elástico garante um ajuste confortável ao corpo, valorizando o comprimento longo da peça.\n\nIdeal para passeios ao ar livre, festas em família ou momentos de lazer nas férias, este vestido une praticidade e sofisticação. É uma peça versátil que combina facilmente com rasteirinhas, sandálias ou tênis casuais.",
+      "highlights": [
+        "Confeccionado em viscose leve e respirável",
+        "Estampa tropical moderna de folhagens em preto e branco",
+        "Modelagem longa com caimento fluido",
+        "Decote estilo ombro a ombro com alcinhas delicadas"
+      ],
+      "seo": {
+        "metaTitle": "Vestido Infantil Longo de Verão em Viscose | R$ 89,90",
+        "metaDescription": "Compre o Vestido de Verão Infantil em viscose leve com estampa folhagem. Modelagem confortável do tamanho 4 ao 10 por apenas R$ 89,90.",
+        "keywords": [
+          "vestido infantil de verão",
+          "vestido longo infantil",
+          "vestido infantil viscose",
+          "vestido infantil estampa folhagem",
+          "moda infantil feminina"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Preto"
+        ],
+        "notes": "O vestido possui modelagem longa, estampa folhagem tropical e decote no estilo ombro a ombro com alcinhas finas."
+      },
+      "missingInfo": [
+        "Tabela de medidas detalhada em centímetros (tórax, cintura e comprimento)",
+        "Informação sobre a presença de forro na saia",
+        "Instruções específicas de lavagem para tecido de viscose"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1169,
+      "outputTokens": 590,
+      "thoughtTokens": 1427
+    },
+    "latencyMs": 11483,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": true
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": false
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.0084405
+  },
+  {
+    "model": "gemini-3.6-flash",
+    "prompt": "v2-grounded",
+    "product": "vestido-verao-infantil",
+    "copy": {
+      "title": "Vestido de Verão Infantil Estampado em Viscose",
+      "shortDescription": "Vestido longo infantil de verão confeccionado em viscose, com estampa de folhagens em preto e branco e tamanhos do 4 ao 10 anos.",
+      "longDescription": "O Vestido de Verão Infantil é confeccionado em tecido 100% viscose, proporcionando caimento leve para os dias mais quentes. O modelo apresenta estampa de folhagens em contraste entre as cores preta e branca ao longo de toda a peça.\n\nO design conta com comprimento longo, mangas curtas com recorte de ombro vazado e alças superiores. A peça está disponível nas numerações 4, 6, 8 e 10 anos.",
+      "highlights": [
+        "Confeccionado em tecido de viscose",
+        "Disponível nos tamanhos 4, 6, 8 e 10 anos",
+        "Estampa de folhagens em preto e branco",
+        "Comprimento longo com ombros vazados"
+      ],
+      "seo": {
+        "metaTitle": "Vestido de Verão Infantil em Viscose Estampado",
+        "metaDescription": "Vestido infantil longo de verão confeccionado em viscose. Modelo estampado em preto e branco disponível dos tamanhos 4 a 10 anos.",
+        "keywords": [
+          "vestido infantil",
+          "vestido de verao infantil",
+          "vestido longo infantil",
+          "vestido de viscose infantil",
+          "vestido estampado infantil"
+        ]
+      },
+      "visualAttributes": {
+        "colors": [
+          "Branco",
+          "Preto"
+        ],
+        "notes": "O modelo apresenta comprimento longo, estampa folhada em fundo branco com folhas pretas e alças nos ombros."
+      },
+      "missingInfo": [
+        "Tabela de medidas da peça em centímetros",
+        "Instruções de lavagem e cuidado com o tecido",
+        "Presença de forro interno",
+        "Nome da marca ou fabricante"
+      ]
+    },
+    "error": null,
+    "usage": {
+      "inputTokens": 1422,
+      "outputTokens": 480,
+      "thoughtTokens": 1105
+    },
+    "latencyMs": 11778,
+    "attempts": 1,
+    "checks": [
+      {
+        "id": "numbers-grounded",
+        "passed": false,
+        "detail": "100"
+      },
+      {
+        "id": "materials-grounded",
+        "passed": true
+      },
+      {
+        "id": "warranty-grounded",
+        "passed": true
+      },
+      {
+        "id": "no-price",
+        "passed": true
+      },
+      {
+        "id": "no-promises",
+        "passed": true
+      },
+      {
+        "id": "plain-text",
+        "passed": true
+      }
+    ],
+    "costUSD": 0.00701025
   }
 ]

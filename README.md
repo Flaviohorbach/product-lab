@@ -10,16 +10,16 @@ spec sheet + photo → prompt (versioned) → Gemini (JSON schema) → validatio
 
 ## Results
 
-57 generations over two days (2026-10-26 and 27). `gemini-3.1-flash-lite` has the full grid; `gemini-3.6-flash` is at 21 of 36 and is being completed as the daily quota allows ([`results/latest.md`](results/latest.md) is always current).
+67 generations over three days (2026-10-26 to 28). `gemini-3.1-flash-lite` has the full grid; `gemini-3.6-flash` is at 31 of 36, the rest waiting on the daily quota ([`results/latest.md`](results/latest.md) is always current).
 
 | Model | Prompt | Products | Valid JSON | No invented facts | Avg latency | Output tokens¹ | Cost / 1,000 products |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gemini-3.1-flash-lite | v2-grounded | 12 | 100% | **100%** | 4.2 s | 474 | **$1.07** |
 | gemini-3.1-flash-lite | v3-few-shot | 12 | 100% | 100% | 9.0 s | 483 | $1.23 |
-| gemini-3.6-flash | v2-grounded | 7 | 100% | 100% | 13.9 s | 1,950 | $8.39 |
-| gemini-3.6-flash | v3-few-shot | 6 | 100% | 100% | 13.4 s | 1,889 | $8.48 |
+| gemini-3.6-flash | v3-few-shot | 10 | 100% | 100% | 12.1 s | 1,859 | $8.37 |
+| gemini-3.6-flash | v2-grounded | 11 | 100% | 82% | 13.8 s | 1,998 | $8.57 |
 | gemini-3.1-flash-lite | v1-baseline | 12 | 100% | 67% | 7.1 s | 592 | $1.21 |
-| gemini-3.6-flash | v1-baseline | 8 | 100% | 50% | 11.8 s | 1,957 | $8.22 |
+| gemini-3.6-flash | v1-baseline | 10 | 100% | 50% | 11.9 s | 1,987 | $8.34 |
 
 ¹ Including thinking tokens, which are billed as output.
 
@@ -27,10 +27,11 @@ spec sheet + photo → prompt (versioned) → Gemini (JSON schema) → validatio
 
 **What the numbers say**
 
-1. **The prompt matters more than the model.** With the one-line baseline prompt, both models invented facts in a third to half of the products: "wooden chopping board" when the spec sheet says the material is unknown, "stainless steel lunch box", "guaranteed protection", the price inside the SEO title. With the grounded prompt (v2), zero detected inventions on either model.
-2. **The cheapest model is enough here.** `gemini-3.1-flash-lite` with v2 matched the bigger model on every check, at **1/8 of the cost and 1/3 of the latency**. The bigger model thinks a lot (about 1,400 thinking tokens per product), which is where its cost goes.
-3. **The few-shot example did not pay off.** v3 scored the same as v2 while being slower and slightly more expensive. The hypothesis in the [changelog](prompts/CHANGELOG.md) was wrong for this task, and that is a useful result too.
-4. **JSON was never the problem.** Structured output gave 100% valid responses everywhere. The failures are all in the content.
+1. **The prompt matters more than the model.** With the one-line baseline prompt, both models invented facts in a third to half of the products: "wooden chopping board" when the spec sheet says the material is unknown, "stainless steel lunch box", "guaranteed protection", the price inside the SEO title. The grounded prompts (v2, v3) removed all of those.
+2. **The cheapest model is the safest here.** `gemini-3.1-flash-lite` with v2 had no detected inventions on all 12 products, at **1/8 of the cost and 1/3 of the latency** of `gemini-3.6-flash`. The bigger model thinks a lot (about 1,400 thinking tokens per product), which is where its cost goes.
+3. **The bigger model "reasons its way" into facts.** Its two v2 failures are not crude inventions but deductions: "Bivolt" became "compatible with 110V and 220V" (Brazil's lower voltage is actually 127 V), and "Composição: Viscose" became "100% viscose" (likely, but not stated, and fiber percentages on clothing must be exact). Plausible inference is exactly the risk in product copy, so the check stays strict. The smaller model did not make these leaps.
+4. **The few-shot example did not clearly pay off.** On flash-lite, v3 scored the same as v2 while being twice as slow. On 3.6-flash, v3 had no failures where v2 had two, but on 10 versus 11 products that is too few to call. The hypothesis in the [changelog](prompts/CHANGELOG.md) is not confirmed.
+5. **JSON was never the problem.** Structured output gave 100% valid responses everywhere. The failures are all in the content.
 
 **The example that sums it up.** For the chopping board, the baseline prompt listed *"exact type of material"* under `missingInfo`, and in the same answer wrote the SEO title *"Tábua de Corte em Madeira"*. The model knew it did not know, and invented it anyway. The grounded prompt kept the material out of the copy and in `missingInfo`.
 
